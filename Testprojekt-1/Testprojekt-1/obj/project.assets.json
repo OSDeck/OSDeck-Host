@@ -45064,11 +45064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
       "projectName": "Testprojekt-1",
-      "projectPath": "C:\\Users\\justi\\source\\repos\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+      "projectPath": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
       "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justi\\source\\repos\\Testprojekt-1\\Testprojekt-1\\obj\\",
+      "outputPath": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

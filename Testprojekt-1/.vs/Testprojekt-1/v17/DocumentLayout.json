@@ -1,9 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\justi\\source\\repos\\Testprojekt-1\\",
+  "WorkspaceRootPath": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\source\\repos\\testprojekt-1\\testprojekt-1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\favicon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\favicon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\resources\\appicon\\appiconfg.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\resources\\appicon\\appiconfg.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\onedrive\\dokumente\\github\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -14,15 +62,170 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\App.xaml",
+              "RelativeDocumentMoniker": "Testprojekt-1\\App.xaml",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\App.xaml",
+              "RelativeToolTip": "Testprojekt-1\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-24T15:57:07.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Testprojekt-1\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MainPage.xaml",
+              "RelativeToolTip": "Testprojekt-1\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-24T15:56:56.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
+              "RelativeToolTip": "Testprojekt-1\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-24T15:56:16.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "favicon.png - PNG [32x32, 32-Bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png",
+              "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\favicon.png",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png - PNG [32x32, 32-Bit, PNG]",
+              "RelativeToolTip": "Testprojekt-1\\wwwroot\\favicon.png - PNG [32x32, 32-Bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-24T15:56:07.806Z",
+              "EditorCaption": " - PNG [32x32, 32-Bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\_Imports.razor",
+              "RelativeToolTip": "Testprojekt-1\\Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T15:55:44.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Routes.razor",
+              "RelativeToolTip": "Testprojekt-1\\Components\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T15:55:39.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Testprojekt-1\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MauiProgram.cs",
+              "RelativeToolTip": "Testprojekt-1\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T15:54:56.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appiconfg.svg",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Resources\\AppIcon\\appiconfg.svg",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Resources\\AppIcon\\appiconfg.svg",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Resources\\AppIcon\\appiconfg.svg",
+              "RelativeToolTip": "Testprojekt-1\\Resources\\AppIcon\\appiconfg.svg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-24T15:54:04.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appicon.svg",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Resources\\AppIcon\\appicon.svg",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Resources\\AppIcon\\appicon.svg",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Resources\\AppIcon\\appicon.svg",
+              "RelativeToolTip": "Testprojekt-1\\Resources\\AppIcon\\appicon.svg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-24T15:54:00.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "Testprojekt-1\\Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T15:53:26.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T15:49:55.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T15:49:46.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\justi\\source\\repos\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Home.razor",
+              "DocumentMoniker": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\justi\\source\\repos\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "Testprojekt-1\\Components\\Pages\\Home.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
