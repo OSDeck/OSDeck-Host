@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {}
+    "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {
+    "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+        "projectUniqueName": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
         "projectName": "Testprojekt-1",
-        "projectPath": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
-        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\OneDrive\\Dokumente\\GitHub\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\",
+        "projectPath": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+        "packagesPath": "C:\\Users\\untid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\untid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -87,6 +87,14 @@
               "target": "Package",
               "version": "[8.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -134,6 +142,14 @@
               "target": "Package",
               "version": "[8.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -181,6 +197,14 @@
               "target": "Package",
               "version": "[8.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -223,6 +247,14 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
