@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\untid\\onedrive - bbbaden\\bbb\\bm\\streamdock\\osdeck-host\\testprojekt-1\\testprojekt-1\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\untid\\onedrive - bbbaden\\bbb\\bm\\streamdock\\osdeck-host\\testprojekt-1\\testprojekt-1\\comhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\comhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,19 +75,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DataHandler.cs",
+              "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\DataHandler.cs",
+              "RelativeDocumentMoniker": "Testprojekt-1\\DataHandler.cs",
+              "ToolTip": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\DataHandler.cs",
+              "RelativeToolTip": "Testprojekt-1\\DataHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T13:07:39.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ComHandler.cs",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\ComHandler.cs",
               "RelativeDocumentMoniker": "Testprojekt-1\\ComHandler.cs",
               "ToolTip": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\ComHandler.cs",
               "RelativeToolTip": "Testprojekt-1\\ComHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAkAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwDUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T20:37:37.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\App.xaml",
               "RelativeDocumentMoniker": "Testprojekt-1\\App.xaml",
@@ -96,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MainPage.xaml",
               "RelativeDocumentMoniker": "Testprojekt-1\\MainPage.xaml",
@@ -109,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\index.html",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "favicon.png - PNG [32x32, 32 bit, PNG]",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png",
               "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\favicon.png",
@@ -134,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\_Imports.razor",
@@ -147,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Routes.razor",
@@ -160,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MauiProgram.cs",
               "RelativeDocumentMoniker": "Testprojekt-1\\MauiProgram.cs",
@@ -173,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "appiconfg.svg",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Resources\\AppIcon\\appiconfg.svg",
               "RelativeDocumentMoniker": "Testprojekt-1\\Resources\\AppIcon\\appiconfg.svg",
@@ -186,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "appicon.svg",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Resources\\AppIcon\\appicon.svg",
               "RelativeDocumentMoniker": "Testprojekt-1\\Resources\\AppIcon\\appicon.svg",
@@ -199,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Weather.razor",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Weather.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Pages\\Weather.razor",
@@ -212,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\NavMenu.razor",
@@ -225,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor",
@@ -238,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Pages\\Home.razor",

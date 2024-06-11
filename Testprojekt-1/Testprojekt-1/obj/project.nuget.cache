@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vsFGCsAY/wq512UhacI35+9L3wTXygWqGLSDvwRnQ9jRyHlJohaIpxhD7JoDCFSmb6HcxWvwb/s3Q4ROxFUreg==",
+  "dgSpecHash": "aU8AYRUYZ6xo4PARoMGhHnv94p+b3nl5XYb0LDqiQfJimT0O/rWNg8WmhW6R4kCYDY8nx9PuMr3Kss6vyInokg==",
   "success": true,
   "projectFilePath": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,12 @@
     "C:\\Users\\untid\\.nuget\\packages\\runtime.native.system.io.ports\\8.0.0\\runtime.native.system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\untid\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\8.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\untid\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\8.0.0\\runtime.osx-x64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\untid\\.nuget\\packages\\skiasharp\\2.88.8\\skiasharp.2.88.8.nupkg.sha512",
+    "C:\\Users\\untid\\.nuget\\packages\\skiasharp.nativeassets.android\\2.88.8\\skiasharp.nativeassets.android.2.88.8.nupkg.sha512",
+    "C:\\Users\\untid\\.nuget\\packages\\skiasharp.nativeassets.ios\\2.88.8\\skiasharp.nativeassets.ios.2.88.8.nupkg.sha512",
+    "C:\\Users\\untid\\.nuget\\packages\\skiasharp.nativeassets.maccatalyst\\2.88.8\\skiasharp.nativeassets.maccatalyst.2.88.8.nupkg.sha512",
+    "C:\\Users\\untid\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.8\\skiasharp.nativeassets.macos.2.88.8.nupkg.sha512",
+    "C:\\Users\\untid\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.8\\skiasharp.nativeassets.win32.2.88.8.nupkg.sha512",
     "C:\\Users\\untid\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\untid\\.nuget\\packages\\system.io.ports\\8.0.0\\system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\untid\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
