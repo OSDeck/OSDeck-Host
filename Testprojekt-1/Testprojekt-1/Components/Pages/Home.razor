@@ -3,3 +3,42 @@
 <h1>Hello...!</h1>
 
 Welcome to OSDeck.
+<br />
+<br />
+<br />
+<InputFile OnChange="@LoadFiles" multiple/>
+
+@if (errors.Count > 0)
+{
+	<h2>Errors</h2>
+	<ul class="text-danger">
+		@foreach (var e in errors)
+		{
+			<li>@e</li>
+		}
+	</ul>
+}
+
+@code {
+	private long maxFileSize = 1024 * 1024 * 3; // represents 3MB
+	private int maxAllowedFiles = 3;
+	private List<string> errors = new();
+
+	private async Task LoadFiles(InputFileChangeEventArgs e)
+	{
+		errors.Clear();
+
+		if(e.FileCount > maxAllowedFiles)
+		{
+			errors.Add($"Error: Attempting to upload {e.FileCount} files, but only {maxAllowedFiles} files are allowed");
+			return;
+
+			foreach (var file in e.GetMultipleFiles(maxAllowedFiles))
+			{
+				
+
+			}
+			
+		}
+	}
+}

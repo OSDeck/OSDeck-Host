@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\Testprojekt-1.styles.css",
+      "PackagePath": "staticwebassets\\Testprojekt-1.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.Testprojekt-1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.build.Testprojekt-1.props",
+      "PackagePath": "build\\Testprojekt-1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.buildMultiTargeting.Testprojekt-1.props",
+      "PackagePath": "buildMultiTargeting\\Testprojekt-1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.buildTransitive.Testprojekt-1.props",
+      "PackagePath": "buildTransitive\\Testprojekt-1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
