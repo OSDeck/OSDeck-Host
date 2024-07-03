@@ -622,3 +622,5 @@ C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\
 C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Radzen.Blazor.dll
+C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Linq.Dynamic.Core.dll

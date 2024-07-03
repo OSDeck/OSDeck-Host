@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-17T14:29:07.504</Modified>
+      <Modified>2024-07-03T09:35:29.462</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-17T14:29:07.323</Modified>
+      <Modified>2024-07-03T08:37:41.770</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Testprojekt-1.runtimeconfig.json">
       <PackagePath>Testprojekt-1.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-17T14:29:07.099</Modified>
+      <Modified>2024-07-03T08:37:41.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Testprojekt-1.dll">
       <PackagePath>Testprojekt-1.dll</PackagePath>
-      <Modified>2024-06-17T14:29:06.419</Modified>
+      <Modified>2024-07-03T09:35:29.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Testprojekt-1.exe</PackagePath>
-      <Modified>2024-06-17T14:29:06.436</Modified>
+      <Modified>2024-07-03T09:35:29.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2024-06-17T14:01:09.255</Modified>
+      <Modified>2024-07-03T08:36:47.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -304,7 +304,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Testprojekt-1.deps.json">
       <PackagePath>Testprojekt-1.deps.json</PackagePath>
-      <Modified>2024-06-17T14:29:07.000</Modified>
+      <Modified>2024-07-03T08:37:41.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -510,6 +510,10 @@
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2023-03-08T07:09:54.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\lib\net8.0\Radzen.Blazor.dll">
+      <PackagePath>Radzen.Blazor.dll</PackagePath>
+      <Modified>2024-07-03T07:22:14.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\skiasharp\2.88.8\lib\net6.0\SkiaSharp.dll">
       <PackagePath>SkiaSharp.dll</PackagePath>
       <Modified>2024-04-09T17:24:12.000</Modified>
@@ -521,6 +525,10 @@
     <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\system.io.ports\8.0.0\runtimes\win\lib\net8.0\System.IO.Ports.dll">
       <PackagePath>System.IO.Ports.dll</PackagePath>
       <Modified>2023-10-31T15:00:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\system.linq.dynamic.core\1.3.7\lib\net8.0\System.Linq.Dynamic.Core.dll">
+      <PackagePath>System.Linq.Dynamic.Core.dll</PackagePath>
+      <Modified>2023-11-20T15:17:48.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\microsoft.maui.controls.core\8.0.7\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -681,6 +689,162 @@
     <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\microsoft.maui.core\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2024-02-13T17:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\dark.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\dark.css</PackagePath>
+      <Modified>2024-07-03T07:21:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\dark-base.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\dark-base.css</PackagePath>
+      <Modified>2024-07-03T07:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\dark-wcag.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\dark-wcag.css</PackagePath>
+      <Modified>2024-07-03T07:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\default.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\default.css</PackagePath>
+      <Modified>2024-07-03T07:21:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\default-base.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\default-base.css</PackagePath>
+      <Modified>2024-07-03T07:21:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\default-wcag.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\default-wcag.css</PackagePath>
+      <Modified>2024-07-03T07:21:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\humanistic.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\humanistic.css</PackagePath>
+      <Modified>2024-07-03T07:21:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\humanistic-base.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\humanistic-base.css</PackagePath>
+      <Modified>2024-07-03T07:21:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\humanistic-wcag.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\humanistic-wcag.css</PackagePath>
+      <Modified>2024-07-03T07:21:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\material.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\material.css</PackagePath>
+      <Modified>2024-07-03T07:22:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\material-base.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\material-base.css</PackagePath>
+      <Modified>2024-07-03T07:22:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\material-wcag.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\material-wcag.css</PackagePath>
+      <Modified>2024-07-03T07:22:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\software.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\software.css</PackagePath>
+      <Modified>2024-07-03T07:22:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\software-base.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\software-base.css</PackagePath>
+      <Modified>2024-07-03T07:22:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\software-wcag.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\software-wcag.css</PackagePath>
+      <Modified>2024-07-03T07:22:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\standard.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\standard.css</PackagePath>
+      <Modified>2024-07-03T07:22:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\standard-base.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\standard-base.css</PackagePath>
+      <Modified>2024-07-03T07:22:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\css\standard-wcag.css">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\css\standard-wcag.css</PackagePath>
+      <Modified>2024-07-03T07:22:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\MaterialIcons-Regular.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\MaterialIcons-Regular.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\roboto-v15-latin-300.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\roboto-v15-latin-300.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\roboto-v15-latin-700.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\roboto-v15-latin-700.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\roboto-v15-latin-regular.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\roboto-v15-latin-regular.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\roboto-v30-latin-300.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\roboto-v30-latin-300.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\roboto-v30-latin-500.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\roboto-v30-latin-500.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\roboto-v30-latin-700.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\roboto-v30-latin-700.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\roboto-v30-latin-regular.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\roboto-v30-latin-regular.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-Black.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-Black.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-BlackIt.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-BlackIt.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-Bold.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-Bold.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-BoldIt.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-BoldIt.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-ExtraLight.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-ExtraLight.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-ExtraLightIt.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-ExtraLightIt.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-It.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-It.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-Light.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-Light.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-LightIt.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-LightIt.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-Regular.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-Regular.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-Semibold.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-Semibold.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\fonts\SourceSansPro-SemiboldIt.woff">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\fonts\SourceSansPro-SemiboldIt.woff</PackagePath>
+      <Modified>2024-07-01T07:04:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\justi\.nuget\packages\radzen.blazor\4.33.3\staticwebassets\Radzen.Blazor.js">
+      <PackagePath>wwwroot\_content\Radzen.Blazor\Radzen.Blazor.js</PackagePath>
+      <Modified>2024-07-03T07:10:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justi\source\repos\OSDeck-Host\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\Testprojekt-1.styles.css">
       <PackagePath>wwwroot\Testprojekt-1.styles.css</PackagePath>

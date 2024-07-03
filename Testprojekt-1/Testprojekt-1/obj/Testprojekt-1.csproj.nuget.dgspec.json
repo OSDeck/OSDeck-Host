@@ -92,6 +92,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.8, )"
@@ -150,6 +154,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
             },
             "SkiaSharp": {
               "target": "Package",
@@ -210,6 +218,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.8, )"
@@ -263,6 +275,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
             },
             "SkiaSharp": {
               "target": "Package",
