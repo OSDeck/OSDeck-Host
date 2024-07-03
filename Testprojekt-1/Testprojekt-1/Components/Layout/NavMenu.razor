@@ -1,4 +1,4 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@* <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">OS-Deck</a>
     </div>
@@ -24,4 +24,78 @@
             </NavLink>
         </div>
     </nav>
-</div>
+</div> *@
+
+
+<RadzenLayout Style="grid-template-columns: auto 1fr auto; grid-template-areas: 'rz-header rz-header rz-header' 'rz-sidebar rz-body rz-right-sidebar'">
+    <RadzenHeader>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0">
+            <RadzenSidebarToggle Click="@(() => leftSidebarExpanded = !leftSidebarExpanded)" />
+            <RadzenLabel Text="Header" />
+        </RadzenStack>
+    </RadzenHeader>
+    <RadzenSidebar @bind-Expanded="@leftSidebarExpanded">
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Text="Home" Icon="home" />
+            <RadzenPanelMenuItem Text="Users" Icon="account_box" />
+            <InputFile OnChange="@LoadFiles" multiple />
+        </RadzenPanelMenu>
+        <div class="rz-p-4">
+            Left Sidebar
+        </div>
+    </RadzenSidebar>
+    <RadzenBody>
+        <div class="rz-p-4">
+            home
+            
+        </div>
+        <div class="rz-p-4">
+            <RadzenButton Text="Toggle left Sidebar" Click="@(() => leftSidebarExpanded = !leftSidebarExpanded)" />
+            <RadzenButton Text="Toggle right Sidebar" Click="@(() => rightSidebarExpanded = !rightSidebarExpanded)" />
+        </div>
+    </RadzenBody>
+    <RadzenSidebar @bind-Expanded="@rightSidebarExpanded" Style="width: 300px; grid-area: rz-right-sidebar">
+        <div class="rz-p-4">
+            Right Sidebar
+        </div>
+    </RadzenSidebar>
+</RadzenLayout>
+
+
+@if (errors.Count > 0)
+{
+    <h2>Errors</h2>
+    <ul class="text-danger">
+        @foreach (var e in errors)
+        {
+            <li>@e</li>
+        }
+    </ul>
+}
+
+@code {
+    bool leftSidebarExpanded = true;
+    bool rightSidebarExpanded = true;
+
+    private long maxFileSize = 1024 * 1024 * 3; // represents 3MB
+    private int maxAllowedFiles = 3;
+    private List<string> errors = new();
+
+    private async Task LoadFiles(InputFileChangeEventArgs e)
+    {
+        errors.Clear();
+
+        if (e.FileCount > maxAllowedFiles)
+        {
+            errors.Add($"Error: Attempting to upload {e.FileCount} files, but only {maxAllowedFiles} files are allowed");
+            return;
+
+            foreach (var file in e.GetMultipleFiles(maxAllowedFiles))
+            {
+
+
+            }
+
+        }
+    }
+}

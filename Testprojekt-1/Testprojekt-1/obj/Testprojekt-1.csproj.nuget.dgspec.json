@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {}
+    "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {
+    "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
         "projectName": "Testprojekt-1",
-        "projectPath": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
-        "packagesPath": "C:\\Users\\untid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\untid\\OneDrive - BBBaden\\BBB\\BM\\streamdock\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\",
+        "projectPath": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\untid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -92,6 +92,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.8, )"
@@ -150,6 +154,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
             },
             "SkiaSharp": {
               "target": "Package",
@@ -210,6 +218,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.8, )"
@@ -263,6 +275,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.33.3, )"
             },
             "SkiaSharp": {
               "target": "Package",
