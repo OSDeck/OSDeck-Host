@@ -1,17 +1,134 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
+    <div class="sidebar left-sidebar">
+        <button @onclick="ToggleLeftSidebar">☰</button>
+        @if (isLeftSidebarOpen)
+        {
+        <div class="group">
+            <h2 @onclick='@(e => ToggleGroup("uploads"))'>Uploads <span>@(isUploadsOpen ? "-" : "+")</span></h2>
+            @if (isUploadsOpen)
+            {
+            <input type="file" class="file-input" />
+            }
+        </div>
+        <div class="group">
+            <h2 @onclick='@(e => ToggleGroup("multimedia"))'>Multimedia <span>@(isMultimediaOpen ? "-" : "+")</span></h2>
+            @if (isMultimediaOpen)
+            {
+            <button>Launch Notepad</button>
+            <button>Launch Calculator</button>
+            <button>Lock Computer</button>
+            }
+        </div>
+        <div class="group">
+            <h2 @onclick='@(e => ToggleGroup("launch"))'>Launch <span>@(isLaunchOpen ? "-" : "+")</span></h2>
+            @if (isLaunchOpen)
+            {
+            <button>Launch Program</button>
+            }
+        </div>
+        }
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        <div class="canvas-container">
+            <div class="canvas"></div>
         </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
     </main>
+
+    <div class="sidebar right-sidebar">
+        <div class="tabs">
+            <button @onclick='@(e => SetActiveTab("inputs"))' class="tab-button @(activeTab == "inputs" ? "active" : "")">Inputs</button>
+            <button @onclick='@(e => SetActiveTab("style"))' class="tab-button @(activeTab == "style" ? "active" : "")">Style</button>
+        </div>
+        @if (activeTab == "inputs")
+        {
+        <div class="tab-content">
+            <div class="group">
+                <h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
+                @if (isShapesOpen)
+                {
+                <div class="shape-circle"></div>
+                <div class="shape-triangle"></div>
+                <div class="shape-oval"></div>
+                <div class="shape-rectangle"></div>
+                <div class="shape-ellipse"></div>
+                <div class="shape-square"></div>
+                }
+            </div>
+            <div class="group">
+                <h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
+                @if (isSlidersOpen)
+                {
+                <div class="slider-placeholder vertical-slider-placeholder"></div>
+                <div class="slider-placeholder horizontal-slider-placeholder"></div>
+                }
+            </div>
+        </div>
+        }
+        else if (activeTab == "style")
+        {
+        <div class="tab-content">
+            <div class="group">
+                <div class="form-group">
+                    <label>Fill <input type="color" class="form-color" /></label>
+                    <label>Border <input type="color" class="form-color" /></label>
+                </div>
+                <div class="form-group">
+                    <label>Orientation <input type="checkbox" class="form-checkbox" /></label>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
 </div>
+
+@code {
+private bool isLeftSidebarOpen = true;
+private bool isRightSidebarOpen = true;
+private bool isUploadsOpen = true;
+private bool isMultimediaOpen = true;
+private bool isLaunchOpen = true;
+private bool isShapesOpen = true;
+private bool isSlidersOpen = true;
+private string activeTab = "inputs";
+
+private void ToggleLeftSidebar()
+{
+isLeftSidebarOpen = !isLeftSidebarOpen;
+}
+
+private void ToggleRightSidebar()
+{
+isRightSidebarOpen = !isRightSidebarOpen;
+}
+
+private void SetActiveTab(string tab)
+{
+activeTab = tab;
+}
+
+private void ToggleGroup(string group)
+{
+switch (group)
+{
+case "uploads":
+isUploadsOpen = !isUploadsOpen;
+break;
+case "multimedia":
+isMultimediaOpen = !isMultimediaOpen;
+break;
+case "launch":
+isLaunchOpen = !isLaunchOpen;
+break;
+case "shapes":
+isShapesOpen = !isShapesOpen;
+break;
+case "sliders":
+isSlidersOpen = !isSlidersOpen;
+break;
+}
+}
+}
+ 

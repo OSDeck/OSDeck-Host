@@ -50071,24 +50071,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\justi\\.nuget\\packages\\": {},
+    "C:\\Users\\menam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+      "projectUniqueName": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
       "projectName": "Testprojekt-1",
-      "projectPath": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
-      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\",
+      "projectPath": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Testprojekt-1.csproj",
+      "packagesPath": "C:\\Users\\menam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\menam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -50100,7 +50100,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -50125,11 +50124,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
