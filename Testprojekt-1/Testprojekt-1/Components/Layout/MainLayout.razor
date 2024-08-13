@@ -1,28 +1,45 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
 
-<div class="page">
+@* Left Sidebar *@
+ <div class="page">
     <div class="sidebar left-sidebar">
         <button @onclick="ToggleLeftSidebar">☰</button>
         @if (isLeftSidebarOpen)
         {
-        <div class="group">
-            <h2 @onclick='@(e => ToggleGroup("uploads"))'>Uploads <span>@(isUploadsOpen ? "-" : "+")</span></h2>
+        <div class="group">                
+            <h2 @onclick='@(e => ToggleGroup("uploads"))'>uploads <span>@(isUploadsOpen ? "-" : "+")</span></h2>
             @if (isUploadsOpen)
             {
-            <input type="file" class="file-input" />
+                    <label for="upload-image">Upload Image</label>
+                    <input type="file" class="file-input" name="upload-image" @onchange="ValidateImage" accept=".png" />
+                    <p>@imageValidationMessage</p>
+                    <p>@imageWidth</p>
+                    @if (!string.IsNullOrEmpty(imagePreviewUrl))
+                    {
+                        <img src="@imagePreviewUrl" alt="Image preview" style="max-width: 100%; max-height: 200px;" />
+                    }
+
+                    @* Upload-configfile *@
+                    <h3>Upload Config File</h3>
+                    <input type="file" class="file-input" name="upload-config" @onchange="UploadConfigFile" accept=".json" />
+                    <p>@configValidationMessage</p>
+                    <button @onclick="DownloadDefaultConfig">Download Default Config</button>
             }
         </div>
         <div class="group">
-            <h2 @onclick='@(e => ToggleGroup("multimedia"))'>Multimedia <span>@(isMultimediaOpen ? "-" : "+")</span></h2>
+            <h2 @onclick='@(e => ToggleGroup("multimedia"))'>multimedia <span>@(isMultimediaOpen ? "-" : "+")</span></h2>
             @if (isMultimediaOpen)
             {
             <button>Launch Notepad</button>
+            <br/>
             <button>Launch Calculator</button>
+            <br/>
             <button>Lock Computer</button>
             }
         </div>
         <div class="group">
-            <h2 @onclick='@(e => ToggleGroup("launch"))'>Launch <span>@(isLaunchOpen ? "-" : "+")</span></h2>
+            <h2 @onclick='@(e => ToggleGroup("launch"))'>launch <span>@(isLaunchOpen ? "-" : "+")</span></h2>
             @if (isLaunchOpen)
             {
             <button>Launch Program</button>
@@ -31,12 +48,14 @@
         }
     </div>
 
+    @* Canva *@
     <main>
         <div class="canvas-container">
             <div class="canvas"></div>
         </div>
     </main>
 
+    @* Right Sidebar *@
     <div class="sidebar right-sidebar">
         <div class="tabs">
             <button @onclick='@(e => SetActiveTab("inputs"))' class="tab-button @(activeTab == "inputs" ? "active" : "")">Inputs</button>
@@ -84,51 +103,6 @@
     </div>
 </div>
 
-@code {
-private bool isLeftSidebarOpen = true;
-private bool isRightSidebarOpen = true;
-private bool isUploadsOpen = true;
-private bool isMultimediaOpen = true;
-private bool isLaunchOpen = true;
-private bool isShapesOpen = true;
-private bool isSlidersOpen = true;
-private string activeTab = "inputs";
 
-private void ToggleLeftSidebar()
-{
-isLeftSidebarOpen = !isLeftSidebarOpen;
-}
 
-private void ToggleRightSidebar()
-{
-isRightSidebarOpen = !isRightSidebarOpen;
-}
-
-private void SetActiveTab(string tab)
-{
-activeTab = tab;
-}
-
-private void ToggleGroup(string group)
-{
-switch (group)
-{
-case "uploads":
-isUploadsOpen = !isUploadsOpen;
-break;
-case "multimedia":
-isMultimediaOpen = !isMultimediaOpen;
-break;
-case "launch":
-isLaunchOpen = !isLaunchOpen;
-break;
-case "shapes":
-isShapesOpen = !isShapesOpen;
-break;
-case "sliders":
-isSlidersOpen = !isSlidersOpen;
-break;
-}
-}
-}
  

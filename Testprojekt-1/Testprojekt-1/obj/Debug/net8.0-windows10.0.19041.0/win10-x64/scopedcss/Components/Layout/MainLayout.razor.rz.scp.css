@@ -2,23 +2,31 @@
     display: flex;
     height: 100vh;
     overflow: hidden; /* Ensure no scrolling */
+    background-color: lightgray;
 }
 
 .left-sidebar[b-1kaokldm0g], .right-sidebar[b-1kaokldm0g] {
-    width: 200px;
-    background-color: #f7f7f7;
+    width: 350px;
+    background-color: cadetblue;
     padding: 1rem;
     box-sizing: border-box;
     position: relative;
 }
 
-.left-sidebar[b-1kaokldm0g] {
-    background-color: #f7f7f7;
-}
 
 .file-input[b-1kaokldm0g] {
     margin-top: 1rem;
 }
+
+button[b-1kaokldm0g] {
+    border-radius: 6px;
+    margin-top: 1rem;
+    background-color: cadetblue;
+}
+    button:hover[b-1kaokldm0g] {
+        background-color: #2d5ba3;
+        color: white;
+    }
 
 .main[b-1kaokldm0g] {
     flex: 1;
@@ -30,8 +38,6 @@
 .canvas-container[b-1kaokldm0g] {
     width: 80%;
     height: 80%;
-    background-color: #f0f0f0;
-    border: 1px solid #d6d5d5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,8 +64,9 @@
     flex: 1;
     padding: 0.5rem;
     cursor: pointer;
-    background-color: #ddd;
-    border: none;
+    background-color: darkcyan;
+    border: 1px solid;
+    border-radius: 0px;
     outline: none;
     transition: background-color 0.3s ease;
 }
@@ -149,4 +156,3 @@
 .form-checkbox[b-1kaokldm0g] {
     margin-left: 0.5rem;
 }
- 

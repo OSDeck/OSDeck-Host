@@ -1,28 +1,32 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\Testprojekt-1.styles.css",
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\Testprojekt-1.styles.css",
       "PackagePath": "staticwebassets\\Testprojekt-1.styles.css"
     },
     {
-      "Id": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\menam\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
+      "PackagePath": "staticwebassets\\site.js"
     },
     {
       "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.Testprojekt-1.Microsoft.AspNetCore.StaticWebAssets.props",
