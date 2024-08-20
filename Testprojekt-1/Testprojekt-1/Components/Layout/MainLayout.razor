@@ -1,16 +1,15 @@
 ﻿@inherits LayoutComponentBase
 @inject IJSRuntime JS
 
-@* Left Sidebar *@
- <div class="page">
+<div class="page">
     <div class="sidebar left-sidebar">
         <button @onclick="ToggleLeftSidebar">☰</button>
         @if (isLeftSidebarOpen)
         {
-        <div class="group">                
-            <h2 @onclick='@(e => ToggleGroup("uploads"))'>uploads <span>@(isUploadsOpen ? "-" : "+")</span></h2>
-            @if (isUploadsOpen)
-            {
+            <div class="group">
+                <h2 @onclick='@(e => ToggleGroup("uploads"))'>uploads <span>@(isUploadsOpen ? "-" : "+")</span></h2>
+                @if (isUploadsOpen)
+                {
                     <label for="upload-image">Upload Image</label>
                     <input type="file" class="file-input" name="upload-image" @onchange="ValidateImage" accept=".png" />
                     <p>@imageValidationMessage</p>
@@ -20,42 +19,39 @@
                         <img src="@imagePreviewUrl" alt="Image preview" style="max-width: 100%; max-height: 200px;" />
                     }
 
-                    @* Upload-configfile *@
                     <h3>Upload Config File</h3>
                     <input type="file" class="file-input" name="upload-config" @onchange="UploadConfigFile" accept=".json" />
                     <p>@configValidationMessage</p>
                     <button @onclick="DownloadDefaultConfig">Download Default Config</button>
-            }
-        </div>
-        <div class="group">
-            <h2 @onclick='@(e => ToggleGroup("multimedia"))'>multimedia <span>@(isMultimediaOpen ? "-" : "+")</span></h2>
-            @if (isMultimediaOpen)
-            {
-            <button>Launch Notepad</button>
-            <br/>
-            <button>Launch Calculator</button>
-            <br/>
-            <button>Lock Computer</button>
-            }
-        </div>
-        <div class="group">
-            <h2 @onclick='@(e => ToggleGroup("launch"))'>launch <span>@(isLaunchOpen ? "-" : "+")</span></h2>
-            @if (isLaunchOpen)
-            {
-            <button>Launch Program</button>
-            }
-        </div>
+                }
+            </div>
+            <div class="group">
+                <h2 @onclick='@(e => ToggleGroup("multimedia"))'>multimedia <span>@(isMultimediaOpen ? "-" : "+")</span></h2>
+                @if (isMultimediaOpen)
+                {
+                    <button>Launch Notepad</button>
+                    <br />
+                    <button>Launch Calculator</button>
+                    <br />
+                    <button>Lock Computer</button>
+                }
+            </div>
+            <div class="group">
+                <h2 @onclick='@(e => ToggleGroup("launch"))'>launch <span>@(isLaunchOpen ? "-" : "+")</span></h2>
+                @if (isLaunchOpen)
+                {
+                    <button>Launch Program</button>
+                }
+            </div>
         }
     </div>
 
-    @* Canva *@
-    <main>
-        <div class="canvas-container">
-            <div class="canvas"></div>
+    <div class="main">
+        <div class="canvas-container" @ref="canvasContainer">
+            <canvas class="canvas"></canvas>
         </div>
-    </main>
+    </div>
 
-    @* Right Sidebar *@
     <div class="sidebar right-sidebar">
         <div class="tabs">
             <button @onclick='@(e => SetActiveTab("inputs"))' class="tab-button @(activeTab == "inputs" ? "active" : "")">Inputs</button>
@@ -63,46 +59,38 @@
         </div>
         @if (activeTab == "inputs")
         {
-        <div class="tab-content">
-            <div class="group">
-                <h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
-                @if (isShapesOpen)
-                {
-                <div class="shape-circle"></div>
-                <div class="shape-triangle"></div>
-                <div class="shape-oval"></div>
-                <div class="shape-rectangle"></div>
-                <div class="shape-ellipse"></div>
-                <div class="shape-square"></div>
-                }
+            <div class="tab-content">
+                <div class="group">
+                    <h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
+                    @if (isShapesOpen)
+                    {
+                        <div class="shape-circle" draggable="true" data-item-type="circle"></div>
+                        <div class="shape-square" draggable="true" data-item-type="square"></div>
+                    }
+                </div>
+                <div class="group">
+                    <h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
+                    @if (isSlidersOpen)
+                    {
+                        <div class="slider-placeholder vertical-slider-placeholder" draggable="true" data-item-type="vertical-slider"></div>
+                        <div class="slider-placeholder horizontal-slider-placeholder" draggable="true" data-item-type="horizontal-slider"></div>
+                    }
+                </div>
             </div>
-            <div class="group">
-                <h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
-                @if (isSlidersOpen)
-                {
-                <div class="slider-placeholder vertical-slider-placeholder"></div>
-                <div class="slider-placeholder horizontal-slider-placeholder"></div>
-                }
-            </div>
-        </div>
         }
         else if (activeTab == "style")
         {
-        <div class="tab-content">
-            <div class="group">
-                <div class="form-group">
-                    <label>Fill <input type="color" class="form-color" /></label>
-                    <label>Border <input type="color" class="form-color" /></label>
-                </div>
-                <div class="form-group">
-                    <label>Orientation <input type="checkbox" class="form-checkbox" /></label>
+            <div class="tab-content">
+                <div class="group">
+                    <div class="form-group">
+                        <label>Fill <input type="color" class="form-color" /></label>
+                        <label>Border <input type="color" class="form-color" /></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Orientation <input type="checkbox" class="form-checkbox" /></label>
+                    </div>
                 </div>
             </div>
-        </div>
         }
     </div>
 </div>
-
-
-
- 

@@ -4,55 +4,54 @@ using System.Text.Json;
 
 namespace Testprojekt_1.Components.Layout
 {
-	public partial class MainLayout
-	{
-		private bool isLeftSidebarOpen = true;
-		private bool isRightSidebarOpen = true;
-		private bool isUploadsOpen = true;
-		private bool isMultimediaOpen = true;
-		private bool isLaunchOpen = true;
-		private bool isShapesOpen = true;
-		private bool isSlidersOpen = true;
-		private string activeTab = "inputs";
+    public partial class MainLayout
+    {
+        private bool isLeftSidebarOpen = true;
+        private bool isRightSidebarOpen = true;
+        private bool isUploadsOpen = true;
+        private bool isMultimediaOpen = true;
+        private bool isLaunchOpen = true;
+        private bool isShapesOpen = true;
+        private bool isSlidersOpen = true;
+        private string activeTab = "inputs";
 
-		private void ToggleLeftSidebar()
-		{
-			isLeftSidebarOpen = !isLeftSidebarOpen;
-		}
+        private ElementReference canvasContainer;
 
-		private void ToggleRightSidebar()
-		{
-			isRightSidebarOpen = !isRightSidebarOpen;
-		}
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                await JS.InvokeVoidAsync("initializeDragAndDrop", canvasContainer);
+            }
+        }
 
-		private void SetActiveTab(string tab)
-		{
-			activeTab = tab;
-		}
+        private void ToggleLeftSidebar() => isLeftSidebarOpen = !isLeftSidebarOpen;
+        private void ToggleRightSidebar() => isRightSidebarOpen = !isRightSidebarOpen;
+        private void SetActiveTab(string tab) => activeTab = tab;
 
-		private void ToggleGroup(string group)
-		{
-			switch (group)
-			{
-				case "uploads":
-					isUploadsOpen = !isUploadsOpen;
-					break;
-				case "multimedia":
-					isMultimediaOpen = !isMultimediaOpen;
-					break;
-				case "launch":
-					isLaunchOpen = !isLaunchOpen;
-					break;
-				case "shapes":
-					isShapesOpen = !isShapesOpen;
-					break;
-				case "sliders":
-					isSlidersOpen = !isSlidersOpen;
-					break;
-			}
-		}
+        private void ToggleGroup(string group)
+        {
+            switch (group)
+            {
+                case "uploads":
+                    isUploadsOpen = !isUploadsOpen;
+                    break;
+                case "multimedia":
+                    isMultimediaOpen = !isMultimediaOpen;
+                    break;
+                case "launch":
+                    isLaunchOpen = !isLaunchOpen;
+                    break;
+                case "shapes":
+                    isShapesOpen = !isShapesOpen;
+                    break;
+                case "sliders":
+                    isSlidersOpen = !isSlidersOpen;
+                    break;
+            }
+        }
 
-        // Image Vallidation
+        // Image Validation
         private string imageValidationMessage;
         private int imageWidth;
         private string imagePreviewUrl;
@@ -203,6 +202,5 @@ namespace Testprojekt_1.Components.Layout
             public string MuteShortcut { get; set; }
             // Add more configurable shortcuts or settings as needed
         }
-
     }
 }
