@@ -4,11 +4,11 @@
     "includedFrameworks": [
       {
         "name": "Microsoft.NETCore.App",
-        "version": "8.0.3"
+        "version": "8.0.8"
       },
       {
         "name": "Microsoft.MacCatalyst",
-        "version": "17.2.8004"
+        "version": "17.2.8078"
       }
     ],
     "configProperties": {
@@ -24,6 +24,7 @@
       "System.Reflection.NullabilityInfoContext.IsSupported": false,
       "System.Resources.ResourceManager.AllowCustomResourceTypes": false,
       "System.Resources.UseSystemResourceKeys": false,
+      "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported": false,
       "System.Runtime.InteropServices.BuiltInComInterop.IsSupported": false,
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
       "System.StartupHookProvider.IsSupported": false,

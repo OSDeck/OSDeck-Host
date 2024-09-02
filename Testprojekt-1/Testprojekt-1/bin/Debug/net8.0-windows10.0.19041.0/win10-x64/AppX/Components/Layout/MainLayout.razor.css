@@ -13,7 +13,6 @@
     position: relative;
 }
 
-
 .file-input {
     margin-top: 1rem;
 }
@@ -23,10 +22,11 @@ button {
     margin-top: 1rem;
     background-color: cadetblue;
 }
-    button:hover {
-        background-color: #2d5ba3;
-        color: white;
-    }
+
+button:hover {
+    background-color: #2d5ba3;
+    color: white;
+}
 
 .main {
     flex: 1;
@@ -39,7 +39,8 @@ button {
     width: 100%;
     height: 0;
     padding-bottom: 75%;
-    position: relative;
+    position: relative; /* Ensure the container is positioned correctly */
+    overflow: hidden; /* Ensures no overflow when items are dragged */
 }
 
 .canvas {
@@ -86,7 +87,7 @@ button {
     margin-bottom: 1rem;
 }
 
-.shape-circle, .shape-triangle, .shape-oval, .shape-rectangle, .shape-ellipse, .shape-square {
+.shape-circle, .shape-square {
     background-color: #ccc;
     border: 1px solid #999;
     margin-bottom: 0.5rem;
@@ -94,31 +95,6 @@ button {
 
 .shape-circle {
     width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.shape-triangle {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #ccc;
-}
-
-.shape-oval {
-    width: 60px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.shape-rectangle {
-    width: 60px;
-    height: 40px;
-}
-
-.shape-ellipse {
-    width: 80px;
     height: 40px;
     border-radius: 50%;
 }
@@ -157,4 +133,14 @@ button {
 
 .form-checkbox {
     margin-left: 0.5rem;
+}
+
+.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+    z-index: 1000; /* Bring it on top during dragging */
+}
+
+.canvas-container .draggable {
+    position: absolute; /* Ensure draggable items are absolutely positioned */
 }

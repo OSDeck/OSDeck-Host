@@ -8,59 +8,58 @@ function downloadFile(href, fileName) {
 }
 
 window.initializeDragAndDrop = function (canvasContainer) {
-    console.log("Initializing drag and drop");
+    const items = document.querySelectorAll('[draggable=true]');
 
-    const canvas = canvasContainer.querySelector('.canvas');
+    items.forEach(item => {
+        item.addEventListener('mousedown', (e) => {
+            let isDragging = false;
+            item.classList.add('dragging');
+            item.style.position = 'absolute';  // Ensure it's absolutely positioned
+            item.style.zIndex = '1000';        // Bring to front
+            item.style.opacity = '0.9';        // Ensure visibility
 
-    document.querySelectorAll('[draggable=true]').forEach(item => {
-        item.addEventListener('dragstart', (e) => {
-            console.log("Drag start:", e.target.getAttribute('data-item-type'));
-            e.dataTransfer.setData('text/plain', e.target.getAttribute('data-item-type'));
+            const offsetX = e.clientX - item.getBoundingClientRect().left;
+            const offsetY = e.clientY - item.getBoundingClientRect().top;
+
+            function onMouseMove(e) {
+                if (!isDragging) {
+                    isDragging = true;
+                }
+
+                // Calculate the new position relative to the canvas
+                const canvasRect = canvasContainer.getBoundingClientRect();
+                let newX = e.clientX - offsetX;
+                let newY = e.clientY - offsetY;
+
+                // Constrain within the canvas
+                newX = Math.max(0, Math.min(newX, canvasRect.width - item.offsetWidth));
+                newY = Math.max(0, Math.min(newY, canvasRect.height - item.offsetHeight));
+
+                item.style.left = `${newX}px`;
+                item.style.top = `${newY}px`;
+
+                // Log the positions for debugging
+                console.log(`Dragging to: X: ${newX}, Y: ${newY}`);
+            }
+
+            function onMouseUp() {
+                isDragging = false;
+                item.classList.remove('dragging');
+                item.style.zIndex = '';        // Reset z-index
+                item.style.opacity = '';       // Reset opacity
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+            }
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
         });
     });
-
-    canvas.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        console.log("Drag over canvas");
-    });
-
-    canvas.addEventListener('drop', (e) => {
-        e.preventDefault();
-        console.log("Drop event on canvas");
-
-        const itemType = e.dataTransfer.getData('text/plain');
-        console.log("Dropped item type:", itemType);
-
-        if (!itemType) return;
-
-        let newItem;
-
-        switch (itemType) {
-            case 'circle':
-                newItem = document.createElement('div');
-                newItem.className = 'shape-circle';
-                break;
-            case 'square':
-                newItem = document.createElement('div');
-                newItem.className = 'shape-square';
-                break;
-            case 'vertical-slider':
-                newItem = document.createElement('div');
-                newItem.className = 'slider-placeholder vertical-slider-placeholder';
-                break;
-            case 'horizontal-slider':
-                newItem = document.createElement('div');
-                newItem.className = 'slider-placeholder horizontal-slider-placeholder';
-                break;
-        }
-
-        if (newItem) {
-            const rect = canvas.getBoundingClientRect();
-            newItem.style.position = 'absolute';
-            newItem.style.left = `${e.clientX - rect.left}px`;
-            newItem.style.top = `${e.clientY - rect.top}px`;
-            canvas.appendChild(newItem);
-            console.log("New item added to canvas:", newItem);
-        }
-    });
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    const canvasContainer = document.querySelector('.canvas-container');
+    if (canvasContainer) {
+        initializeDragAndDrop(canvasContainer);
+    }
+});
