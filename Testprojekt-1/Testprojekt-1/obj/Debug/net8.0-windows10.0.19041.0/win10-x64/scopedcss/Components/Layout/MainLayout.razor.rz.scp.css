@@ -11,6 +11,7 @@
     padding: 1rem;
     box-sizing: border-box;
     position: relative;
+    user-select: none;
 }
 
 .file-input[b-1kaokldm0g] {

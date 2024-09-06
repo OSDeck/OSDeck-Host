@@ -7,6 +7,16 @@ function downloadFile(href, fileName) {
     document.body.removeChild(link);
 }
 
+function getCanvas() {
+    const canvas = document.getElementsByClassName("canvas")[0];
+    if (canvas) {
+        const rect = canvas.getBoundingClientRect();
+        return [rect.x, rect.y, rect.width, rect.height].map(Math.round);
+    }
+
+    return [0, 0, 0, 0];
+}
+
 window.initializeDragAndDrop = function (canvasContainer) {
     const items = document.querySelectorAll('[draggable=true]');
 

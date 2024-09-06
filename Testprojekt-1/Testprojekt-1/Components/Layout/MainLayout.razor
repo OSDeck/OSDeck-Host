@@ -1,97 +1,107 @@
 ﻿@inherits LayoutComponentBase
 @inject IJSRuntime JS
 
-<div class="page">
-    <div class="sidebar left-sidebar">
-        <button @onclick="ToggleLeftSidebar">☰</button>
-        @if (isLeftSidebarOpen)
-        {
-            <div class="group">
-                <h2 @onclick='@(e => ToggleGroup("uploads"))'>uploads <span>@(isUploadsOpen ? "-" : "+")</span></h2>
-                @if (isUploadsOpen)
-                {
-                    <label for="upload-image">Upload Image</label>
-                    <input type="file" class="file-input" name="upload-image" @onchange="ValidateImage" accept=".png" />
-                    <p>@imageValidationMessage</p>
-                    <p>@imageWidth</p>
-                    @if (!string.IsNullOrEmpty(imagePreviewUrl))
-                    {
-                        <img src="@imagePreviewUrl" alt="Image preview" style="max-width: 100%; max-height: 200px;" />
-                    }
+<div class="page" @onmousemove="HandleDrag" @onmouseup="HandleDrop">
+	@if (isDragging)
+	{
+		<div class="shape-circle" style="position: absolute; left: @PosXpx; top: @PosYpx; z-index: 10"></div>
+	}
+	@foreach (var t in canvasObjects)
+	{
+		<div class="shape-circle" @onmousedown="HandleMoveStart" style="position: absolute; left: @t.getX(); top: @t.getY(); width: @t.getWidth(); height: @t.getHeight(); background-color: red; z-index: 5"> </div>
+	}
+	<div class="sidebar left-sidebar">
+		<button @onclick="ToggleLeftSidebar">☰</button>
+		@if (isLeftSidebarOpen)
+		{
+			<div class="group">
+				<h2 @onclick='@(e => ToggleGroup("uploads"))'>uploads <span>@(isUploadsOpen ? "-" : "+")</span></h2>
+				@if (isUploadsOpen)
+				{
+					<label for="upload-image">Upload Image</label>
+					<input type="file" class="file-input" name="upload-image" @onchange="ValidateImage" accept=".png"/>
+					<p>@imageValidationMessage</p>
+					<p>@imageWidth</p>
+					@if (!string.IsNullOrEmpty(imagePreviewUrl))
+					{
+						<img src="@imagePreviewUrl" alt="Image preview" style="max-width: 100%; max-height: 200px;"/>
+					}
 
-                    <h3>Upload Config File</h3>
-                    <input type="file" class="file-input" name="upload-config" @onchange="UploadConfigFile" accept=".json" />
-                    <p>@configValidationMessage</p>
-                    <button @onclick="DownloadDefaultConfig">Download Default Config</button>
-                }
-            </div>
-            <div class="group">
-                <h2 @onclick='@(e => ToggleGroup("multimedia"))'>multimedia <span>@(isMultimediaOpen ? "-" : "+")</span></h2>
-                @if (isMultimediaOpen)
-                {
-                    <button>Launch Notepad</button>
-                    <br />
-                    <button>Launch Calculator</button>
-                    <br />
-                    <button>Lock Computer</button>
-                }
-            </div>
-            <div class="group">
-                <h2 @onclick='@(e => ToggleGroup("launch"))'>launch <span>@(isLaunchOpen ? "-" : "+")</span></h2>
-                @if (isLaunchOpen)
-                {
-                    <button>Launch Program</button>
-                }
-            </div>
-        }
-    </div>
+					<h3>Upload Config File</h3>
+					<input type="file" class="file-input" name="upload-config" @onchange="UploadConfigFile" accept=".json"/>
+					<p>@configValidationMessage</p>
+					<button @onclick="DownloadDefaultConfig">Download Default Config</button>
+				}
+			</div>
+			<div class="group">
+				<h2 @onclick='@(e => ToggleGroup("multimedia"))'>multimedia <span>@(isMultimediaOpen ? "-" : "+")</span></h2>
+				@if (isMultimediaOpen)
+				{
+					<button>Launch Notepad</button>
+					<br/>
+					<button>Launch Calculator</button>
+					<br/>
+					<button>Lock Computer</button>
+				}
+			</div>
+			<div class="group">
+				<h2 @onclick='@(e => ToggleGroup("launch"))'>launch <span>@(isLaunchOpen ? "-" : "+")</span></h2>
+				@if (isLaunchOpen)
+				{
+					<button>Launch Program</button>
+				}
+			</div>
+		}
+	</div>
 
-    <div class="main">
-        <div class="canvas-container" @ref="canvasContainer">
-            <div class="canvas"></div> <!-- Changed from <canvas> to <div> -->
-        </div>
-    </div>
+	<div class="main">
+		<div class="canvas-container" @ref="canvasContainer">
+			<div class="canvas">
+
+			</div>
+		</div>
+	</div>
 
 
-    <div class="sidebar right-sidebar">
-        <div class="tabs">
-            <button @onclick='@(e => SetActiveTab("inputs"))' class="tab-button @(activeTab == "inputs" ? "active" : "")">Inputs</button>
-            <button @onclick='@(e => SetActiveTab("style"))' class="tab-button @(activeTab == "style" ? "active" : "")">Style</button>
-        </div>
-        @if (activeTab == "inputs")
-        {
-            <div class="tab-content">
-                <div class="group">
-                    <h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
-                    @if (isShapesOpen)
-                    {
-                        <div class="shape-circle" draggable="true" data-item-type="circle"></div>
-                        <div class="shape-square" draggable="true" data-item-type="square"></div>
-                    }
-                </div>
-                <div class="group">
-                    <h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
-                    @if (isSlidersOpen)
-                    {
-                        <div class="slider-placeholder vertical-slider-placeholder" draggable="true" data-item-type="vertical-slider"></div>
-                        <div class="slider-placeholder horizontal-slider-placeholder" draggable="true" data-item-type="horizontal-slider"></div>
-                    }
-                </div>
-            </div>
-        }
-        else if (activeTab == "style")
-        {
-            <div class="tab-content">
-                <div class="group">
-                    <div class="form-group">
-                        <label>Fill <input type="color" class="form-color" /></label>
-                        <label>Border <input type="color" class="form-color" /></label>
-                    </div>
-                    <div class="form-group">
-                        <label>Orientation <input type="checkbox" class="form-checkbox" /></label>
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
+	<div class="sidebar right-sidebar">
+		<div class="tabs">
+			<button @onclick='@(e => SetActiveTab("inputs"))' class="tab-button @(activeTab == "inputs" ? "active" : "")">Inputs</button>
+			<button @onclick='@(e => SetActiveTab("style"))' class="tab-button @(activeTab == "style" ? "active" : "")">Style</button>
+		</div>
+		@if (activeTab == "inputs")
+		{
+			<div class="tab-content">
+				<div class="group">
+					<h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
+					@if (isShapesOpen)
+					{
+						<div class="shape-circle" data-item-type="circle" @onmousedown="HandlePickup"></div>
+						<div class="shape-square" draggable="true" data-item-type="square"></div>
+					}
+				</div>
+				<div class="group">
+					<h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
+					@if (isSlidersOpen)
+					{
+						<div class="slider-placeholder vertical-slider-placeholder" draggable="true" data-item-type="vertical-slider"></div>
+						<div class="slider-placeholder horizontal-slider-placeholder" draggable="true" data-item-type="horizontal-slider"></div>
+					}
+				</div>
+			</div>
+		}
+		else if (activeTab == "style")
+		{
+			<div class="tab-content">
+				<div class="group">
+					<div class="form-group">
+						<label>Fill <input type="color" class="form-color"/></label>
+						<label>Border <input type="color" class="form-color"/></label>
+					</div>
+					<div class="form-group">
+						<label>Orientation <input type="checkbox" class="form-checkbox"/></label>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
 </div>

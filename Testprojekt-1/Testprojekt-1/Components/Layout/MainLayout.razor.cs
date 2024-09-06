@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.JSInterop;
 using System.Text.Json;
+using Microsoft.VisualBasic.CompilerServices;
+using Testprojekt_1.Helpers;
 
 namespace Testprojekt_1.Components.Layout
 {
@@ -14,6 +17,12 @@ namespace Testprojekt_1.Components.Layout
         private bool isShapesOpen = true;
         private bool isSlidersOpen = true;
         private string activeTab = "inputs";
+        private bool isDragging = false;
+        private int isMoving = -1;
+        private double posX = 0;
+        private double posY = 0;
+        private List<DragObject> canvasObjects = new List<DragObject>();
+
 
         private ElementReference canvasContainer;
 
@@ -28,6 +37,8 @@ namespace Testprojekt_1.Components.Layout
         private void ToggleLeftSidebar() => isLeftSidebarOpen = !isLeftSidebarOpen;
         private void ToggleRightSidebar() => isRightSidebarOpen = !isRightSidebarOpen;
         private void SetActiveTab(string tab) => activeTab = tab;
+        protected string PosXpx => $"{posX}px";
+        protected string PosYpx => $"{posY}px";
 
         private void ToggleGroup(string group)
         {
@@ -174,6 +185,75 @@ namespace Testprojekt_1.Components.Layout
             {
                 configValidationMessage = "No config file selected.";
             }
+        }
+
+        protected void HandlePickup(MouseEventArgs e)
+        {
+            isDragging = true;
+            posX = e.ClientX;
+            posY = e.ClientY;
+
+            StateHasChanged();
+        }
+
+        protected void HandleDrag(MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                posX = e.ClientX;
+                posY = e.ClientY;
+            } else if (isMoving != -1)
+            {
+	            canvasObjects[isMoving].setPosition(e.ClientX, e.ClientY);
+            }
+
+            StateHasChanged();
+        }
+
+		protected async void HandleDrop(MouseEventArgs e)
+        {
+	        int[] arr = new int[4];
+	        arr = await JS.InvokeAsync<int[]>("getCanvas");
+
+			if (isDragging)
+	        {
+		        isDragging = false;
+
+		        if (e.ClientX > arr[0] && e.ClientX < arr[0] + arr[2] && e.ClientY > arr[1] &&
+		            e.ClientY < arr[1] + arr[3])
+		        {
+			        canvasObjects.Add(new DragObject(40, e.ClientX, e.ClientY, 0));
+		        }
+	        } else if (isMoving != -1)
+			{
+				if (e.ClientX > arr[0] && e.ClientX < arr[0] + arr[2] && e.ClientY > arr[1] &&
+				    e.ClientY < arr[1] + arr[3])
+				{
+					canvasObjects[isMoving].setPosition(e.ClientX, e.ClientY);
+				}
+				else
+				{
+                    canvasObjects.RemoveAt(isMoving);
+				}
+
+				isMoving = -1;
+			}
+
+			StateHasChanged();
+		}
+
+        protected void HandleMoveStart(MouseEventArgs e)
+        {
+	        for (int i = 0; i < canvasObjects.Count; i++)
+	        {
+                //Todo fix for cases such as rectangle
+		        if (e.ClientX > canvasObjects[i].PosX && e.ClientX < canvasObjects[i].PosX + canvasObjects[i].SizeX && e.ClientY > canvasObjects[i].PosY &&
+		            e.ClientY < canvasObjects[i].PosY + canvasObjects[i].SizeX)
+		        {
+			        isMoving = i;
+			        break;
+		        }
+	        }
         }
 
         private async Task DownloadDefaultConfig()

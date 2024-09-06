@@ -1,31 +1,31 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Testprojekt-1.styles.css",
+      "Id": "D:\\BBB\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Testprojekt-1.styles.css",
       "PackagePath": "staticwebassets\\Testprojekt-1.styles.css"
     },
     {
-      "Id": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\app.css",
+      "Id": "D:\\BBB\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\BBB\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\BBB\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png",
+      "Id": "D:\\BBB\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
+      "Id": "D:\\BBB\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
+      "Id": "D:\\BBB\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
       "PackagePath": "staticwebassets\\site.js"
     },
     {

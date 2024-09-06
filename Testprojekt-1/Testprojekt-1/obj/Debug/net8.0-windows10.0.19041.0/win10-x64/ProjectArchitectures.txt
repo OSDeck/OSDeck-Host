@@ -1,1 +1,1 @@
-C:\Users\Merlin Al-Sabti\projects\OSDeck-Host\Testprojekt-1\Testprojekt-1\Testprojekt-1.csproj;x64
+D:\BBB\OSDeck-Host\Testprojekt-1\Testprojekt-1\Testprojekt-1.csproj;x64
