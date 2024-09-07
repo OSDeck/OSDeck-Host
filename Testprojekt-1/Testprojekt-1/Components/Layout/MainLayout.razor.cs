@@ -4,6 +4,7 @@ using Microsoft.JSInterop;
 using System.Text.Json;
 using Microsoft.VisualBasic.CompilerServices;
 using Testprojekt_1.Helpers;
+using Microsoft.AspNetCore.Components.Forms;
 
 namespace Testprojekt_1.Components.Layout
 {
@@ -62,94 +63,85 @@ namespace Testprojekt_1.Components.Layout
             }
         }
 
-        // Image Validation
-        private string imageValidationMessage;
-        private int imageWidth;
-        private string imagePreviewUrl;
+		// Image Validation
+		private string imageValidationMessage;
+		private string imagePreviewUrl;
+		private const long MaxFileSize = 2 * 1024 * 1024;
 
-        private async Task ValidateImage(ChangeEventArgs e)
-        {
-            var file = e.Value as Microsoft.AspNetCore.Components.Forms.IBrowserFile;
+		private async Task ValidateImage(InputFileChangeEventArgs e)
+		{
+			var file = e.File;
 
-            if (file != null)
-            {
-                var extension = Path.GetExtension(file.Name).ToLower();
-                using var stream = file.OpenReadStream();
-                var buffer = new byte[24];
+			if (file != null)
+			{
+				var extension = Path.GetExtension(file.Name).ToLower();
+				if (file.Size > MaxFileSize)
+				{
+					imageValidationMessage = "File is too large. Maximum size is 2MB.";
+					imagePreviewUrl = null;
+					return;
+				}
 
-                await stream.ReadAsync(buffer, 0, buffer.Length);
+				using var stream = file.OpenReadStream(MaxFileSize);
+				using var memoryStream = new MemoryStream();
+				await stream.CopyToAsync(memoryStream);
 
-                if (extension == ".bmp")
-                {
-                    bool isBmp = buffer[0] == 'B' && buffer[1] == 'M';
-                    int bitsPerPixel = BitConverter.ToInt16(buffer, 28);
+				var fileBytes = memoryStream.ToArray();
+				var base64String = Convert.ToBase64String(fileBytes);
 
-                    if (!isBmp || bitsPerPixel != 24)
-                    {
-                        imageValidationMessage = "Invalid BMP file. Please upload a 24-bit BMP image.";
-                        imageWidth = 0;
-                        imagePreviewUrl = null;
-                        return;
-                    }
+				// Set image preview URL
+				imagePreviewUrl = $"data:{file.ContentType};base64,{base64String}";
 
-                    imageWidth = BitConverter.ToInt32(buffer, 18);
-                    imageValidationMessage = "Valid 24-bit BMP image.";
-                }
-                else if (extension == ".png")
-                {
-                    bool isPng = buffer[0] == 0x89 && buffer[1] == 0x50 && buffer[2] == 0x4E && buffer[3] == 0x47;
+				// Validate the image format
+				if (extension == ".bmp")
+				{
+					if (IsValidBmp(fileBytes))
+					{
+						imageValidationMessage = "Valid 24-bit BMP image.";
+					}
+					else
+					{
+						imageValidationMessage = "Invalid BMP file. Please upload a 24-bit BMP image.";
+						imagePreviewUrl = null;
+					}
+				}
+				else if (extension == ".jpeg" || extension == ".jpg")
+				{
+					if (IsValidJpeg(fileBytes))
+					{
+						imageValidationMessage = "Valid JPEG image.";
+					}
+					else
+					{
+						imageValidationMessage = "Invalid JPEG file.";
+						imagePreviewUrl = null;
+					}
+				}
+				else
+				{
+					imageValidationMessage = "Unsupported file type. Please upload a BMP (24-bit) or JPEG.";
+					imagePreviewUrl = null;
+				}
+			}
+			else
+			{
+				imageValidationMessage = "No file selected.";
+				imagePreviewUrl = null;
+			}
+		}
 
-                    if (!isPng)
-                    {
-                        imageValidationMessage = "Invalid PNG file.";
-                        imageWidth = 0;
-                        imagePreviewUrl = null;
-                        return;
-                    }
+		private bool IsValidBmp(byte[] fileBytes)
+		{
+			return fileBytes.Length > 28 && fileBytes[0] == 'B' && fileBytes[1] == 'M' && BitConverter.ToInt16(fileBytes, 28) == 24;
+		}
 
-                    imageWidth = BitConverter.ToInt32(buffer.Skip(16).Take(4).Reverse().ToArray(), 0);
-                    imageValidationMessage = "Valid PNG image.";
-                }
-                else if (extension == ".jpg" || extension == ".jpeg")
-                {
-                    bool isJpeg = buffer[0] == 0xFF && buffer[1] == 0xD8;
+		private bool IsValidJpeg(byte[] fileBytes)
+		{
+			return fileBytes.Length > 2 && fileBytes[0] == 0xFF && fileBytes[1] == 0xD8;
+		}
 
-                    if (!isJpeg)
-                    {
-                        imageValidationMessage = "Invalid JPEG file.";
-                        imageWidth = 0;
-                        imagePreviewUrl = null;
-                        return;
-                    }
-
-                    imageValidationMessage = "Valid JPEG image.";
-                    // Image width extraction for JPEG is more complex and often requires parsing the entire file.
-                    imageWidth = 0; // Set this to 0 or implement JPEG width extraction.
-                }
-                else
-                {
-                    imageValidationMessage = "Unsupported file type.";
-                    imageWidth = 0;
-                    imagePreviewUrl = null;
-                    return;
-                }
-
-                // Generate preview URL
-                var bufferForPreview = new byte[file.Size];
-                await stream.ReadAsync(bufferForPreview, 0, bufferForPreview.Length);
-                var base64String = Convert.ToBase64String(bufferForPreview);
-                imagePreviewUrl = $"data:{file.ContentType};base64,{base64String}";
-            }
-            else
-            {
-                imageValidationMessage = "No file selected.";
-                imageWidth = 0;
-                imagePreviewUrl = null;
-            }
-        }
-
-        // Config-File
-        private string configValidationMessage;
+		// Config-File
+		private string configValidationMessage;
 
         private async Task UploadConfigFile(ChangeEventArgs e)
         {

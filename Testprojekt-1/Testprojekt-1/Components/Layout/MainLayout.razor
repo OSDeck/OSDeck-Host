@@ -19,12 +19,12 @@
 				@if (isUploadsOpen)
 				{
 					<label for="upload-image">Upload Image</label>
-					<input type="file" class="file-input" name="upload-image" @onchange="ValidateImage" accept=".png"/>
+					<InputFile OnChange="ValidateImage" accept=".bmp,.jpeg,.jpg" />
 					<p>@imageValidationMessage</p>
-					<p>@imageWidth</p>
+
 					@if (!string.IsNullOrEmpty(imagePreviewUrl))
 					{
-						<img src="@imagePreviewUrl" alt="Image preview" style="max-width: 100%; max-height: 200px;"/>
+						<img src="@imagePreviewUrl" alt="Image preview" style="max-width: 100%; max-height: 200px;" />
 					}
 
 					<h3>Upload Config File</h3>

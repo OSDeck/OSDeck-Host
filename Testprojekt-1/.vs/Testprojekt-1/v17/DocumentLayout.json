@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\",
+  "WorkspaceRootPath": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\source\\repos\\osdeck-host\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\source\\repos\\osdeck-host\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\source\\repos\\osdeck-host\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\source\\repos\\osdeck-host\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\justi\\source\\repos\\osdeck-host\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
+              "DocumentMoniker": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
               "RelativeToolTip": "Testprojekt-1\\wwwroot\\index.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
+              "DocumentMoniker": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
               "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\site.js",
-              "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
+              "ToolTip": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
               "RelativeToolTip": "Testprojekt-1\\wwwroot\\site.js",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAwwCwAAAAzAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAwwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-08-13T18:58:59.382Z",
               "EditorCaption": ""
@@ -61,40 +61,39 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADoAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-13T15:21:13.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainLayout.razor.cs",
-              "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
+              "DocumentMoniker": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
-              "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
+              "ToolTip": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
               "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAwwK0AAAANAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAQwHEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T15:21:11.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainLayout.razor.css",
-              "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
-              "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\justi\\source\\repos\\OSDeck-Host\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
               "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
               "ViewState": "AQIAADoAAAAAAAAAAAAmwGIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-13T15:24:24.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T15:24:24.814Z"
             }
           ]
         }
