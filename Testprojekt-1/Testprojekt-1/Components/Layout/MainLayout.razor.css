@@ -1,16 +1,52 @@
+
+/* Basic page layout */
 .page {
     display: flex;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden;
     background-color: lightgray;
 }
 
+.sidebar {
+    background-color: cadetblue;
+    padding: 1rem;
+    box-sizing: border-box;
+    user-select: none;
+    transition: width 0.3s ease;
+}
+
+    .sidebar.expanded {
+        width: 300px;
+    }
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: not-allowed;
+}
+
+.circle-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.circle-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #999;
+    border-radius: 50%;
+    border: 2px solid #555;
+}
+
 .selected {
-    border: 2px solid blue; /* Add a blue border around the selected object */
+    border: 2px solid blue;
 }
 
 .left-sidebar, .right-sidebar {
-    width: 300px; /* Keep the sidebar width fixed */
+    width: 300px;
     background-color: cadetblue;
     padding: 1rem;
     box-sizing: border-box;
@@ -34,7 +70,7 @@ button {
     }
 
 .main {
-    flex: 1; /* The main content will take up the remaining space between the sidebars */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,12 +78,12 @@ button {
 
 .canvas-container {
     position: relative;
-    width: 100%; /* Allow the canvas to take the full width available */
+    width: 100%;
     height: auto;
-    max-width: 100%; /* Let the canvas stretch horizontally */
-    max-height: 100%; /* Let the canvas stretch vertically */
-    aspect-ratio: 800 / 480; /* Maintain the 800:480 aspect ratio */
-    margin: 0 auto; /* Center the canvas horizontally */
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 800 / 480;
+    margin: 0 auto;
 }
 
 .canvas {
