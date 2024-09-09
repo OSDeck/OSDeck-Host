@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\BBB\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-09T15:19:09.002</Modified>
+      <Modified>2024-09-09T19:00:09.707</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\BBB\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-09T15:19:08.765</Modified>
+      <Modified>2024-09-09T19:00:09.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\BBB\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Testprojekt-1.runtimeconfig.json">
       <PackagePath>Testprojekt-1.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\BBB\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Testprojekt-1.dll">
       <PackagePath>Testprojekt-1.dll</PackagePath>
-      <Modified>2024-09-09T15:19:08.377</Modified>
+      <Modified>2024-09-09T19:00:09.214</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\BBB\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Testprojekt-1.exe</PackagePath>
-      <Modified>2024-09-09T15:19:08.386</Modified>
+      <Modified>2024-09-09T19:00:09.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\BBB\OSDeck-Host\Testprojekt-1\Testprojekt-1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
