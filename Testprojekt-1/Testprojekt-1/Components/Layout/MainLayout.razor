@@ -4,12 +4,17 @@
 <div class="page" @onmousemove="HandleDrag" @onmouseup="HandleDrop">
 	@if (isDragging)
 	{
-		<div class="shape-circle" style="position: absolute; left: @PosXpx; top: @PosYpx; z-index: 10"></div>
+		<div class="@activeClass" style="position: absolute; left: @PosXpx; top: @PosYpx; z-index: 10"></div>
 	}
+
 	@foreach (var t in canvasObjects)
 	{
-		<div class="shape-circle" @onmousedown="HandleMoveStart" style="position: absolute; left: @t.getX(); top: @t.getY(); width: @t.getWidth(); height: @t.getHeight(); background-color: red; z-index: 5"> </div>
+		<div class="@t.ClassName"
+			 @onmousedown="HandleMoveStart"
+			 style="position: absolute; left: @t.getX(); top: @t.getY(); width: @t.getWidth(); height: @t.getHeight(); z-index: 5">
+		</div>
 	}
+
 	<div class="sidebar left-sidebar">
 		<button @onclick="ToggleLeftSidebar">☰</button>
 		@if (isLeftSidebarOpen)
@@ -28,7 +33,7 @@
 					}
 
 					<h3>Upload Config File</h3>
-					<input type="file" class="file-input" name="upload-config" @onchange="UploadConfigFile" accept=".json"/>
+					<input type="file" class="file-input" name="upload-config" @onchange="UploadConfigFile" accept=".json" />
 					<p>@configValidationMessage</p>
 					<button @onclick="DownloadDefaultConfig">Download Default Config</button>
 				}
@@ -38,9 +43,9 @@
 				@if (isMultimediaOpen)
 				{
 					<button>Launch Notepad</button>
-					<br/>
+					<br />
 					<button>Launch Calculator</button>
-					<br/>
+					<br />
 					<button>Lock Computer</button>
 				}
 			</div>
@@ -57,7 +62,6 @@
 	<div class="main">
 		<div class="canvas-container" @ref="canvasContainer">
 			<div class="canvas">
-
 			</div>
 		</div>
 	</div>
@@ -75,16 +79,16 @@
 					<h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
 					@if (isShapesOpen)
 					{
-						<div class="shape-circle" data-item-type="circle" @onmousedown="HandlePickup"></div>
-						<div class="shape-square" draggable="true" data-item-type="square"></div>
+						<div class="draggableItem shape-circle" data-item-type="circle" @onmousedown="@(e => HandlePickup(e, "shape-circle"))"></div>
+						<div class="draggableItem shape-square" data-item-type="square" @onmousedown="@(e => HandlePickup(e, "shape-square"))"></div>
 					}
 				</div>
 				<div class="group">
 					<h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
 					@if (isSlidersOpen)
 					{
-						<div class="slider-placeholder vertical-slider-placeholder" draggable="true" data-item-type="vertical-slider"></div>
-						<div class="slider-placeholder horizontal-slider-placeholder" draggable="true" data-item-type="horizontal-slider"></div>
+						<div class="draggableItem vertical-slider" data-item-type="vertical-slider" @onmousedown="@(e => HandlePickup(e, "vertical-slider"))"></div>
+						<div class="draggableItem horizontal-slider" data-item-type="horizontal-slider" @onmousedown="@(e => HandlePickup(e, "horizontal-slider"))"></div>
 					}
 				</div>
 			</div>
@@ -94,11 +98,11 @@
 			<div class="tab-content">
 				<div class="group">
 					<div class="form-group">
-						<label>Fill <input type="color" class="form-color"/></label>
-						<label>Border <input type="color" class="form-color"/></label>
+						<label>Fill <input type="color" class="form-color" /></label>
+						<label>Border <input type="color" class="form-color" /></label>
 					</div>
 					<div class="form-group">
-						<label>Orientation <input type="checkbox" class="form-checkbox"/></label>
+						<label>Orientation <input type="checkbox" class="form-checkbox" /></label>
 					</div>
 				</div>
 			</div>

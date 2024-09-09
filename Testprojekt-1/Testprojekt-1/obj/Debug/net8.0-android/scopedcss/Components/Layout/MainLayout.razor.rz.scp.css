@@ -11,6 +11,7 @@
     padding: 1rem;
     box-sizing: border-box;
     position: relative;
+    user-select: none;
 }
 
 .file-input[b-1kaokldm0g] {
@@ -104,20 +105,20 @@ button:hover[b-1kaokldm0g] {
     height: 40px;
 }
 
-.slider-placeholder[b-1kaokldm0g] {
+.vertical-slider[b-1kaokldm0g], .horizontal-slider[b-1kaokldm0g] {
     background-color: #ddd;
     border: 1px solid #bbb;
     margin-bottom: 0.5rem;
 }
 
-.vertical-slider-placeholder[b-1kaokldm0g] {
+.vertical-slider[b-1kaokldm0g] {
     width: 8px;
     height: 100px;
     background: linear-gradient(to top, #bbb 50%, #ddd 50%);
 }
 
-.horizontal-slider-placeholder[b-1kaokldm0g] {
-    width: 100%;
+.horizontal-slider[b-1kaokldm0g] {
+    width: 100px;
     height: 8px;
     background: linear-gradient(to right, #bbb 50%, #ddd 50%);
 }

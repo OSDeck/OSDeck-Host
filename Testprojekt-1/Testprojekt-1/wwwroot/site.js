@@ -17,6 +17,18 @@ function getCanvas() {
     return [0, 0, 0, 0];
 }
 
+document.querySelectorAll('.draggableItem').forEach(item => {
+    item.addEventListener('click', function () {
+        // Remove any class that was applied from the previous click
+        document.querySelectorAll('.draggableItem').forEach(i => {
+            i.classList.remove(i.dataset.class);
+        });
+
+        // Add the class from the data-class attribute to the clicked element
+        this.classList.add(this.dataset.class);
+    });
+});
+
 window.initializeDragAndDrop = function (canvasContainer) {
     const items = document.querySelectorAll('[draggable=true]');
 
