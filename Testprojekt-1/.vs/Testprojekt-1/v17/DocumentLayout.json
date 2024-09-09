@@ -7,28 +7,36 @@
       "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\helpers\\dragobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\helpers\\dragobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\helpers\\comhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\helpers\\comhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\helpers\\domrect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\helpers\\domrect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\helpers\\dragobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\helpers\\dragobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|c:\\users\\merlin al-sabti\\projects\\osdeck-host\\testprojekt-1\\testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B43E162-D94B-4E0F-A344-9DB85E2EDDC9}|Testprojekt-1\\Testprojekt-1.csproj|solutionrelative:testprojekt-1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,35 +46,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Testprojekt-1\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\MauiProgram.cs",
+              "RelativeToolTip": "Testprojekt-1\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T20:08:20.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Helpers\\ComHandler.cs",
+              "RelativeDocumentMoniker": "Testprojekt-1\\Helpers\\ComHandler.cs",
+              "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Helpers\\ComHandler.cs",
+              "RelativeToolTip": "Testprojekt-1\\Helpers\\ComHandler.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAswFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T19:14:36.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DOMRect.cs",
               "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Helpers\\DOMRect.cs",
               "RelativeDocumentMoniker": "Testprojekt-1\\Helpers\\DOMRect.cs",
               "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Helpers\\DOMRect.cs",
               "RelativeToolTip": "Testprojekt-1\\Helpers\\DOMRect.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T00:24:04.587Z"
+              "WhenOpened": "2024-09-09T00:24:04.587Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "DragObject.cs",
               "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Helpers\\DragObject.cs",
               "RelativeDocumentMoniker": "Testprojekt-1\\Helpers\\DragObject.cs",
               "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Helpers\\DragObject.cs",
               "RelativeToolTip": "Testprojekt-1\\Helpers\\DragObject.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA+wCwAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T23:32:17.74Z"
+              "WhenOpened": "2024-09-08T23:32:17.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\site.js",
               "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\site.js",
@@ -79,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Testprojekt-1\\wwwroot\\index.html",
@@ -98,33 +134,33 @@
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor",
               "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAwwGAAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-13T15:21:13.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainLayout.razor.cs",
               "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
               "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
               "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.cs",
-              "ViewState": "AQIAADIBAAAAAAAAAAAYwEoBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T15:21:11.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
               "ToolTip": "C:\\Users\\Merlin Al-Sabti\\projects\\OSDeck-Host\\Testprojekt-1\\Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
               "RelativeToolTip": "Testprojekt-1\\Components\\Layout\\MainLayout.razor.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAAAM4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-08-13T15:24:24.814Z",
               "EditorCaption": ""

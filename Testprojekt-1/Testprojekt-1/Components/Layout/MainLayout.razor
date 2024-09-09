@@ -1,5 +1,6 @@
 ﻿@inherits LayoutComponentBase
 @inject IJSRuntime JS
+@inject Testprojekt_1.Helpers.ComHandler comHandler
 
 <div class="page" @onmousemove="HandleDrag" @onmouseup="HandleDrop">
     @if (isDragging)
@@ -15,8 +16,11 @@
         </div>
     }
 
+    <div class="connection-status @(comHandler.IsConnected ? "green" : "red")">
+        @(comHandler.IsConnected ? "Connected" : "Not Connected")
+    </div>
+
     <div class="sidebar left-sidebar expanded">
-        <button class="toggle-btn" @onclick="ToggleLeftSidebar" disabled>☰</button>
         @if (isLeftSidebarOpen)
         {
             <div class="group">
@@ -57,7 +61,6 @@
                 }
             </div>
             <div class="circle-buttons">
-                <!-- Circle-shaped buttons after expansion -->
                 <div class="circle-btn"></div>
                 <div class="circle-btn"></div>
                 <div class="circle-btn"></div>

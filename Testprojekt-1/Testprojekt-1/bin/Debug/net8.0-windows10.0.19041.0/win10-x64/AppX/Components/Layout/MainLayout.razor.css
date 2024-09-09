@@ -187,3 +187,20 @@ button {
 .canvas-container .draggable {
     position: absolute; /* Ensure draggable items are absolutely positioned */
 }
+
+.connection-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    z-index: 1000; /* Ensure it's on top */
+    color: red; /* Default color */
+}
+
+    .connection-status.green {
+        color: green;
+    }
+
+    .connection-status.red {
+        color: red;
+    }

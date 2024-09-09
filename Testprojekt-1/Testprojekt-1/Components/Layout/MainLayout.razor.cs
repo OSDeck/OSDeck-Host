@@ -29,8 +29,6 @@ namespace Testprojekt_1.Components.Layout
 		private string fill { get; set; } = "#000000";
 		private string stroke { get; set; } = "#000000";
 
-		private ComHandler comHandler = new ComHandler();
-
 		private ElementReference canvasContainer;
 
 		protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -40,8 +38,17 @@ namespace Testprojekt_1.Components.Layout
 				await JS.InvokeVoidAsync("initializeDragAndDrop", canvasContainer);
 			}
 		}
+        protected override void OnInitialized()
+        {
+            comHandler.ConnectionStatusChanged += StateHasChanged;
+        }
 
-		private void ToggleLeftSidebar() => isLeftSidebarOpen = !isLeftSidebarOpen;
+        public void Dispose()
+        {
+            comHandler.ConnectionStatusChanged -= StateHasChanged;
+        }
+
+        private void ToggleLeftSidebar() => isLeftSidebarOpen = !isLeftSidebarOpen;
 		private void ToggleRightSidebar() => isRightSidebarOpen = !isRightSidebarOpen;
 		private void SetActiveTab(string tab) => activeTab = tab;
 		protected string PosXpx => $"{posX}px";
