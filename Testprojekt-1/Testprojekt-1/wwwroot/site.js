@@ -7,7 +7,7 @@ function downloadFile(href, fileName) {
     document.body.removeChild(link);
 }
 
-function getCanvas() {
+window.getCanvas = function() {
     const canvas = document.getElementsByClassName("canvas")[0];
     if (canvas) {
         const rect = canvas.getBoundingClientRect();
@@ -15,6 +15,32 @@ function getCanvas() {
     }
 
     return [0, 0, 0, 0];
+}
+
+window.getSize = function (shape) {
+    let width, height = 0
+    if (shape === "shape-circle") {
+        width = document.getElementById("circleSize").value;
+        height = width;
+    } else if (shape === "shape-square") {
+        width = document.getElementById("width").value;
+        height = document.getElementById("height").value;
+    } else if (shape === "vertical-slider") {
+        width = 8;
+        height = document.getElementById("sliderSize").value;
+    } else if (shape === "horizontal-slider") {
+        width = document.getElementById("sliderSize").value
+        height = 8;
+    }
+
+    return [width, height].map(Math.round);
+}
+
+window.getColor = function () {
+    let fill, stroke = "";
+    fill = document.getElementById("fill").value;
+    stroke = document.getElementById("stroke").value;
+    return [fill, stroke];
 }
 
 document.querySelectorAll('.draggableItem').forEach(item => {

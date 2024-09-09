@@ -4,14 +4,14 @@
 <div class="page" @onmousemove="HandleDrag" @onmouseup="HandleDrop">
 	@if (isDragging)
 	{
-		<div class="@activeClass" style="position: absolute; left: @PosXpx; top: @PosYpx; z-index: 10"></div>
+		<div class="@activeClass" style="position: absolute; left: @PosXpx; top: @PosYpx; width: @WidthPx; height: @HeightPx; z-index: 10; background-color: @fill; border-color: @stroke; border-style: solid; border-width: 2px"></div>
 	}
 
 	@foreach (var t in canvasObjects)
 	{
 		<div class="@t.ClassName"
 			 @onmousedown="HandleMoveStart"
-			 style="position: absolute; left: @t.getX(); top: @t.getY(); width: @t.getWidth(); height: @t.getHeight(); z-index: 5">
+			 style="position: absolute; left: @t.getX(); top: @t.getY(); width: @t.getWidth(); height: @t.getHeight(); z-index: 5;  background-color: @t.fill; border-color: @t.stroke; border-style: solid; border-width: 2px">
 		</div>
 	}
 
@@ -79,16 +79,30 @@
 					<h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
 					@if (isShapesOpen)
 					{
-						<div class="draggableItem shape-circle" data-item-type="circle" @onmousedown="@(e => HandlePickup(e, "shape-circle"))"></div>
-						<div class="draggableItem shape-square" data-item-type="square" @onmousedown="@(e => HandlePickup(e, "shape-square"))"></div>
+						<div>
+							<div class="draggableItem shape-circle" style="background-color: @fill; border-color: @stroke; border-style: solid; border-width: 2px" data-item-type="circle" @onmousedown="@(e => HandlePickup(e, "shape-circle"))"></div>
+							<input type="text" id="circleSize" value="100"/>
+							<label for="circleSize">Circle Diameter</label>
+						</div>
+						<div>
+							<div class="draggableItem shape-square" style="background-color: @fill; border-color: @stroke; border-style: solid; border-width: 2px" data-item-type="square" @onmousedown="@(e => HandlePickup(e, "shape-square"))"></div>
+							<input type="text" id="width" value="100"/>
+							<label for="width">Width</label>
+							<input type = "text" id="height" value="100"/>
+							<label for="height">Height</label>
+						</div>
 					}
 				</div>
 				<div class="group">
 					<h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
 					@if (isSlidersOpen)
 					{
-						<div class="draggableItem vertical-slider" data-item-type="vertical-slider" @onmousedown="@(e => HandlePickup(e, "vertical-slider"))"></div>
-						<div class="draggableItem horizontal-slider" data-item-type="horizontal-slider" @onmousedown="@(e => HandlePickup(e, "horizontal-slider"))"></div>
+						<div>
+							<div class="draggableItem vertical-slider" data-item-type="vertical-slider" @onmousedown="@(e => HandlePickup(e, "vertical-slider"))"></div>
+							<div class="draggableItem horizontal-slider" data-item-type="horizontal-slider" @onmousedown="@(e => HandlePickup(e, "horizontal-slider"))"></div>
+							<input type="text" id="sliderSize" value="100" />
+							<label for="sliderSize">Length Slider</label>
+						</div>
 					}
 				</div>
 			</div>
@@ -98,8 +112,8 @@
 			<div class="tab-content">
 				<div class="group">
 					<div class="form-group">
-						<label>Fill <input type="color" class="form-color" /></label>
-						<label>Border <input type="color" class="form-color" /></label>
+						<label>Fill <input type="color" class="form-color" @onchange="setFill" value="#000000"/></label>
+						<label>Border <input type="color" class="form-color" @onchange="setStroke" value="#000000"/></label>
 					</div>
 					<div class="form-group">
 						<label>Orientation <input type="checkbox" class="form-checkbox" /></label>

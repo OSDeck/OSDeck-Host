@@ -7,7 +7,7 @@ using System;
 using System.IO.Ports;
 using Newtonsoft.Json;
 
-namespace Comahandler
+namespace Testprojekt_1.Helpers
 {
     internal class ComHandler
     {

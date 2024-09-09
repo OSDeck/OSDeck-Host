@@ -16,29 +16,32 @@
 		public int SizeY;
 		public int PosX;
 		public int PosY;
-		protected int _color { get; set; }
+		public string fill { get; set; }
+		public string stroke { get; set; }
 		public string ClassName { get; set; }  // New property to store the class name
 
 		// Constructor for Circle
-		public DragObject(int width, double posX, double posY, int color, string className = "shape-circle")
+		public DragObject(int width, double posX, double posY, string fill, string stroke, string className = "shape-circle")
 		{
 			this._type = ObjectType.Circle;
 			this.SizeX = width;
 			this.PosX = (int)posX;
 			this.PosY = (int)posY;
-			this._color = color;
+			this.fill = fill;
+			this.stroke = stroke;
 			this.ClassName = className;  // Assign the class name
 		}
 
 		// Constructor for Rectangle
-		public DragObject(int sizeX, int sizeY, double posX, double posY, int color, string className = "shape-rectangle")
+		public DragObject(int sizeX, int sizeY, double posX, double posY, string fill, string stroke, string className = "shape-rectangle")
 		{
 			this._type = ObjectType.Rectangle;
 			this.SizeX = sizeX;
 			this.SizeY = sizeY;
 			this.PosX = (int)posX;
 			this.PosY = (int)posY;
-			this._color = color;
+			this.fill = fill;
+			this.stroke = stroke;
 			this.ClassName = className;  // Assign the class name
 		}
 

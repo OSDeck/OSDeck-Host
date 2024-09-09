@@ -24,6 +24,10 @@ namespace Testprojekt_1.Components.Layout
 		private double posY = 0;
 		private List<DragObject> canvasObjects = new List<DragObject>();
 		private string activeClass;  // Track the active class
+		private int height = 0;
+		private int width = 0;
+		private string fill { get; set; } = "#000000";
+		private string stroke { get; set; } = "#000000";
 
 
 
@@ -42,6 +46,18 @@ namespace Testprojekt_1.Components.Layout
 		private void SetActiveTab(string tab) => activeTab = tab;
 		protected string PosXpx => $"{posX}px";
 		protected string PosYpx => $"{posY}px";
+		protected string WidthPx => $"{width}px";
+		protected string HeightPx => $"{height}px";
+
+		public void setFill (ChangeEventArgs e)
+		{
+			fill = e.Value.ToString();
+		}
+
+		public void setStroke (ChangeEventArgs e)
+		{
+			stroke = e.Value.ToString();
+		}
 
 		private void ToggleGroup(string group)
 		{
@@ -181,12 +197,16 @@ namespace Testprojekt_1.Components.Layout
 			}
 		}
 
-		protected void HandlePickup(MouseEventArgs e, string itemType)
+		protected async void HandlePickup(MouseEventArgs e, string itemType)
 		{
 			isDragging = true;
 			posX = e.ClientX;
 			posY = e.ClientY;
 			activeClass = itemType;
+			int[] sizes = await JS.InvokeAsync<int[]>("getSize", itemType);
+
+			width = sizes[0];
+			height = sizes[1];
 
 			StateHasChanged();
 		}
@@ -224,23 +244,23 @@ namespace Testprojekt_1.Components.Layout
 					// Add new object with the active class (inside the canvas)
 					if (activeClass.Contains("shape-circle"))
 					{
-						canvasObjects.Add(new DragObject(40, 40, e.ClientX, e.ClientY, activeClass));
+						canvasObjects.Add(new DragObject(width, height, e.ClientX, e.ClientY, fill, stroke, activeClass));
 					}
 					else if (activeClass.Contains("shape-square"))
 					{
-						canvasObjects.Add(new DragObject(40, 40, e.ClientX, e.ClientY, activeClass));
+						canvasObjects.Add(new DragObject(width, height, e.ClientX, e.ClientY, fill, stroke, activeClass));
 					}
 					else if (activeClass.Contains("shape-rectangle"))
 					{
-						canvasObjects.Add(new DragObject(60, 40, e.ClientX, e.ClientY, activeClass));
+						canvasObjects.Add(new DragObject(width, height, e.ClientX, e.ClientY, fill, stroke, activeClass));
 					}
 					else if (activeClass.Contains("vertical-slider"))
 					{
-						canvasObjects.Add(new DragObject(8, 100, e.ClientX, e.ClientY, activeClass));
+						canvasObjects.Add(new DragObject(8, height, e.ClientX, e.ClientY, activeClass));
 					}
 					else if (activeClass.Contains("horizontal-slider"))
 					{
-						canvasObjects.Add(new DragObject(100, 8, e.ClientX, e.ClientY, activeClass));
+						canvasObjects.Add(new DragObject(width, 8, e.ClientX, e.ClientY, activeClass));
 					}
 				}
 				// If the object is dropped outside the canvas, do nothing (disappear)

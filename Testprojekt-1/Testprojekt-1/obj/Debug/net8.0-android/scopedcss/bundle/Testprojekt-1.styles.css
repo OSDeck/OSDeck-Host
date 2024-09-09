@@ -2,12 +2,16 @@
 .page[b-1kaokldm0g] {
     display: flex;
     height: 100vh;
-    overflow: hidden; /* Ensure no scrolling */
+    overflow: hidden; /* Prevent scrolling */
     background-color: lightgray;
 }
 
+.selected[b-1kaokldm0g] {
+    border: 2px solid blue; /* Add a blue border around the selected object */
+}
+
 .left-sidebar[b-1kaokldm0g], .right-sidebar[b-1kaokldm0g] {
-    width: 350px;
+    width: 300px; /* Keep the sidebar width fixed */
     background-color: cadetblue;
     padding: 1rem;
     box-sizing: border-box;
@@ -25,24 +29,26 @@ button[b-1kaokldm0g] {
     background-color: cadetblue;
 }
 
-button:hover[b-1kaokldm0g] {
-    background-color: #2d5ba3;
-    color: white;
-}
+    button:hover[b-1kaokldm0g] {
+        background-color: #2d5ba3;
+        color: white;
+    }
 
 .main[b-1kaokldm0g] {
-    flex: 1;
+    flex: 1; /* The main content will take up the remaining space between the sidebars */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .canvas-container[b-1kaokldm0g] {
-    width: 100%;
-    height: 0;
-    padding-bottom: 75%;
-    position: relative; /* Ensure the container is positioned correctly */
-    overflow: hidden; /* Ensures no overflow when items are dragged */
+    position: relative;
+    width: 100%; /* Allow the canvas to take the full width available */
+    height: auto;
+    max-width: 100%; /* Let the canvas stretch horizontally */
+    max-height: 100%; /* Let the canvas stretch vertically */
+    aspect-ratio: 800 / 480; /* Maintain the 800:480 aspect ratio */
+    margin: 0 auto; /* Center the canvas horizontally */
 }
 
 .canvas[b-1kaokldm0g] {
@@ -76,9 +82,9 @@ button:hover[b-1kaokldm0g] {
     transition: background-color 0.3s ease;
 }
 
-.tab-button.active[b-1kaokldm0g] {
-    background-color: #bbb;
-}
+    .tab-button.active[b-1kaokldm0g] {
+        background-color: #bbb;
+    }
 
 .tab-content[b-1kaokldm0g] {
     display: flex;
@@ -119,8 +125,8 @@ button:hover[b-1kaokldm0g] {
 }
 
 .horizontal-slider[b-1kaokldm0g] {
-    width: 100px;
-    height: 8px;
+    width: 100px; /* Same width as the vertical slider height */
+    height: 8px; /* Same height as the vertical slider width */
     background: linear-gradient(to right, #bbb 50%, #ddd 50%);
 }
 
