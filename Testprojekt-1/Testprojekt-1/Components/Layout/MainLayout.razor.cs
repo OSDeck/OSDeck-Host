@@ -29,7 +29,7 @@ namespace Testprojekt_1.Components.Layout
 		private string fill { get; set; } = "#000000";
 		private string stroke { get; set; } = "#000000";
 
-
+		private ComHandler comHandler = new ComHandler();
 
 		private ElementReference canvasContainer;
 
