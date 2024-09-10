@@ -105,6 +105,17 @@ window.initializeDragAndDrop = function (canvasContainer) {
     });
 };
 
+let lastMove = 0;
+function debounceMouseMove(e) {
+    const now = Date.now();
+    if (now - lastMove > 10) {  // Adjust the debounce time as necessary
+        onMouseMove(e);
+        lastMove = now;
+    }
+}
+
+document.addEventListener('mousemove', debounceMouseMove);
+
 document.addEventListener('DOMContentLoaded', function () {
     const canvasContainer = document.querySelector('.canvas-container');
     if (canvasContainer) {

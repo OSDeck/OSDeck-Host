@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\Merlin Al-Sabti\projects\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-09T23:38:26.351</Modified>
+      <Modified>2024-09-10T08:33:34.681</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Merlin Al-Sabti\projects\OSDeck-Host\Testprojekt-1\Testprojekt-1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Testprojekt-1.dll">
       <PackagePath>Testprojekt-1.dll</PackagePath>
-      <Modified>2024-09-09T23:38:25.857</Modified>
+      <Modified>2024-09-10T08:29:56.179</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Merlin Al-Sabti\projects\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Testprojekt-1.exe</PackagePath>
-      <Modified>2024-09-09T23:38:25.865</Modified>
+      <Modified>2024-09-10T08:29:56.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Merlin Al-Sabti\projects\OSDeck-Host\Testprojekt-1\Testprojekt-1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -75,7 +75,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Merlin Al-Sabti\projects\OSDeck-Host\Testprojekt-1\Testprojekt-1\wwwroot\site.js">
       <PackagePath>wwwroot\site.js</PackagePath>
-      <Modified>2024-09-09T15:37:53.953</Modified>
+      <Modified>2024-09-10T08:33:31.814</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Merlin Al-Sabti\projects\OSDeck-Host\Testprojekt-1\Testprojekt-1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
