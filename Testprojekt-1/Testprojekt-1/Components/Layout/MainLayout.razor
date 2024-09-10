@@ -1,9 +1,26 @@
 ﻿@inherits LayoutComponentBase
 @inject IJSRuntime JS
+@inject Testprojekt_1.Helpers.ComHandler comHandler
 
-<div class="page">
-    <div class="sidebar left-sidebar">
-        <button @onclick="ToggleLeftSidebar">☰</button>
+<div class="page" @onmousemove="HandleDrag" @onmouseup="HandleDrop">
+    @if (isDragging)
+    {
+        <div class="@activeClass" style="position: absolute; left: @PosXpx; top: @PosYpx; width: @WidthPx; height: @HeightPx; z-index: 10; background-color: @fill; border-color: @stroke; border-style: solid; border-width: 2px"></div>
+    }
+
+    @foreach (var t in canvasObjects)
+    {
+        <div class="@t.ClassName"
+             @onmousedown="HandleMoveStart"
+             style="position: absolute; left: @t.getX(); top: @t.getY(); width: @t.getWidth(); height: @t.getHeight(); z-index: 5;  background-color: @t.fill; border-color: @t.stroke; border-style: solid; border-width: 2px">
+        </div>
+    }
+
+    <div class="connection-status @(comHandler.IsConnected ? "green" : "red")">
+        @(comHandler.IsConnected ? "Connected" : "Not Connected")
+    </div>
+
+    <div class="sidebar left-sidebar expanded">
         @if (isLeftSidebarOpen)
         {
             <div class="group">
@@ -11,9 +28,9 @@
                 @if (isUploadsOpen)
                 {
                     <label for="upload-image">Upload Image</label>
-                    <input type="file" class="file-input" name="upload-image" @onchange="ValidateImage" accept=".png" />
+                    <InputFile OnChange="ValidateImage" accept=".bmp,.jpeg,.jpg" />
                     <p>@imageValidationMessage</p>
-                    <p>@imageWidth</p>
+
                     @if (!string.IsNullOrEmpty(imagePreviewUrl))
                     {
                         <img src="@imagePreviewUrl" alt="Image preview" style="max-width: 100%; max-height: 200px;" />
@@ -43,12 +60,18 @@
                     <button>Launch Program</button>
                 }
             </div>
+            <div class="circle-buttons">
+                <div class="circle-btn"></div>
+                <div></div>
+                <div class="circle-btn"></div>
+            </div>
         }
     </div>
 
     <div class="main">
         <div class="canvas-container" @ref="canvasContainer">
-            <canvas class="canvas"></canvas>
+            <div class="canvas">
+            </div>
         </div>
     </div>
 
@@ -64,16 +87,30 @@
                     <h2 @onclick='@(e => ToggleGroup("shapes"))'>button <span>@(isShapesOpen ? "-" : "+")</span></h2>
                     @if (isShapesOpen)
                     {
-                        <div class="shape-circle" draggable="true" data-item-type="circle"></div>
-                        <div class="shape-square" draggable="true" data-item-type="square"></div>
+                        <div>
+                            <div class="draggableItem shape-circle" style="background-color: @fill; border-color: @stroke; border-style: solid; border-width: 2px" data-item-type="circle" @onmousedown="@(e => HandlePickup(e, "shape-circle"))"></div>
+                            <input type="text" id="circleSize" value="100" />
+                            <label for="circleSize">Circle Diameter</label>
+                        </div>
+                        <div>
+                            <div class="draggableItem shape-square" style="background-color: @fill; border-color: @stroke; border-style: solid; border-width: 2px" data-item-type="square" @onmousedown="@(e => HandlePickup(e, "shape-square"))"></div>
+                            <input type="text" id="width" value="100" />
+                            <label for="width">Width</label>
+                            <input type="text" id="height" value="100" />
+                            <label for="height">Height</label>
+                        </div>
                     }
                 </div>
                 <div class="group">
                     <h2 @onclick='@(e => ToggleGroup("sliders"))'>slider <span>@(isSlidersOpen ? "-" : "+")</span></h2>
                     @if (isSlidersOpen)
                     {
-                        <div class="slider-placeholder vertical-slider-placeholder" draggable="true" data-item-type="vertical-slider"></div>
-                        <div class="slider-placeholder horizontal-slider-placeholder" draggable="true" data-item-type="horizontal-slider"></div>
+                        <div>
+                            <div class="draggableItem vertical-slider" data-item-type="vertical-slider" @onmousedown="@(e => HandlePickup(e, "vertical-slider"))"></div>
+                            <div class="draggableItem horizontal-slider" data-item-type="horizontal-slider" @onmousedown="@(e => HandlePickup(e, "horizontal-slider"))"></div>
+                            <input type="text" id="sliderSize" value="100" />
+                            <label for="sliderSize">Length Slider</label>
+                        </div>
                     }
                 </div>
             </div>
@@ -83,8 +120,8 @@
             <div class="tab-content">
                 <div class="group">
                     <div class="form-group">
-                        <label>Fill <input type="color" class="form-color" /></label>
-                        <label>Border <input type="color" class="form-color" /></label>
+                        <label>Fill <input type="color" class="form-color" @onchange="setFill" value="#000000" /></label>
+                        <label>Border <input type="color" class="form-color" @onchange="setStroke" value="#000000" /></label>
                     </div>
                     <div class="form-group">
                         <label>Orientation <input type="checkbox" class="form-checkbox" /></label>

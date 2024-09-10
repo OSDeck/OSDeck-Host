@@ -1,7 +1,6 @@
-﻿using Comahandler;
-using SkiaSharp;
+﻿using SkiaSharp;
 
-namespace Testprojekt_1
+namespace Testprojekt_1.Helpers
 {
     internal class DataHandler
     {
@@ -16,7 +15,7 @@ namespace Testprojekt_1
         {
             var data = new
             {
-                globalId = globalId,
+                globalId,
                 delete = true
             };
             _comHandler.SendData(data);
@@ -26,12 +25,12 @@ namespace Testprojekt_1
         {
             var data = new
             {
-                globalId = globalId,
-                objType = objType,
+                globalId,
+                objType,
                 Position = new
                 {
-                    x = x,
-                    y = y
+                    x,
+                    y
                 },
                 Properties = new
                 {

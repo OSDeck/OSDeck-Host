@@ -1,18 +1,58 @@
+
+/* Basic page layout */
 .page {
     display: flex;
     height: 100vh;
-    overflow: hidden; /* Ensure no scrolling */
+    overflow: hidden;
     background-color: lightgray;
 }
 
+.sidebar {
+    background-color: cadetblue;
+    padding: 1rem;
+    box-sizing: border-box;
+    user-select: none;
+    transition: width 0.3s ease;
+}
+
+    .sidebar.expanded {
+        width: 300px;
+    }
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: not-allowed;
+}
+
+.circle-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.circle-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #999;
+    border-radius: 50%;
+    border: 2px solid #555;
+}
+
+.selected {
+    border: 2px solid blue;
+}
+
 .left-sidebar, .right-sidebar {
-    width: 350px;
+    width: 300px;
     background-color: cadetblue;
     padding: 1rem;
     box-sizing: border-box;
     position: relative;
+    user-select: none;
 }
-
 
 .file-input {
     margin-top: 1rem;
@@ -23,6 +63,7 @@ button {
     margin-top: 1rem;
     background-color: cadetblue;
 }
+
     button:hover {
         background-color: #2d5ba3;
         color: white;
@@ -36,10 +77,13 @@ button {
 }
 
 .canvas-container {
-    width: 100%;
-    height: 0;
-    padding-bottom: 75%;
     position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 800 / 480;
+    margin: 0 auto;
 }
 
 .canvas {
@@ -73,9 +117,9 @@ button {
     transition: background-color 0.3s ease;
 }
 
-.tab-button.active {
-    background-color: #bbb;
-}
+    .tab-button.active {
+        background-color: #bbb;
+    }
 
 .tab-content {
     display: flex;
@@ -86,7 +130,7 @@ button {
     margin-bottom: 1rem;
 }
 
-.shape-circle, .shape-triangle, .shape-oval, .shape-rectangle, .shape-ellipse, .shape-square {
+.shape-circle, .shape-square {
     background-color: #ccc;
     border: 1px solid #999;
     margin-bottom: 0.5rem;
@@ -98,51 +142,26 @@ button {
     border-radius: 50%;
 }
 
-.shape-triangle {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #ccc;
-}
-
-.shape-oval {
-    width: 60px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.shape-rectangle {
-    width: 60px;
-    height: 40px;
-}
-
-.shape-ellipse {
-    width: 80px;
-    height: 40px;
-    border-radius: 50%;
-}
-
 .shape-square {
     width: 40px;
     height: 40px;
 }
 
-.slider-placeholder {
+.vertical-slider, .horizontal-slider {
     background-color: #ddd;
     border: 1px solid #bbb;
     margin-bottom: 0.5rem;
 }
 
-.vertical-slider-placeholder {
+.vertical-slider {
     width: 8px;
     height: 100px;
     background: linear-gradient(to top, #bbb 50%, #ddd 50%);
 }
 
-.horizontal-slider-placeholder {
-    width: 100%;
-    height: 8px;
+.horizontal-slider {
+    width: 100px; /* Same width as the vertical slider height */
+    height: 8px; /* Same height as the vertical slider width */
     background: linear-gradient(to right, #bbb 50%, #ddd 50%);
 }
 
@@ -158,3 +177,30 @@ button {
 .form-checkbox {
     margin-left: 0.5rem;
 }
+
+.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+    z-index: 1000; /* Bring it on top during dragging */
+}
+
+.canvas-container .draggable {
+    position: absolute; /* Ensure draggable items are absolutely positioned */
+}
+
+.connection-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    z-index: 1000; /* Ensure it's on top */
+    color: red; /* Default color */
+}
+
+    .connection-status.green {
+        color: green;
+    }
+
+    .connection-status.red {
+        color: red;
+    }

@@ -1,19 +1,59 @@
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
+
+/* Basic page layout */
 .page[b-1kaokldm0g] {
     display: flex;
     height: 100vh;
-    overflow: hidden; /* Ensure no scrolling */
+    overflow: hidden;
     background-color: lightgray;
 }
 
+.sidebar[b-1kaokldm0g] {
+    background-color: cadetblue;
+    padding: 1rem;
+    box-sizing: border-box;
+    user-select: none;
+    transition: width 0.3s ease;
+}
+
+    .sidebar.expanded[b-1kaokldm0g] {
+        width: 300px;
+    }
+
+.toggle-btn[b-1kaokldm0g] {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: not-allowed;
+}
+
+.circle-buttons[b-1kaokldm0g] {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.circle-btn[b-1kaokldm0g] {
+    width: 60px;
+    height: 60px;
+    background-color: #999;
+    border-radius: 50%;
+    border: 2px solid #555;
+}
+
+.selected[b-1kaokldm0g] {
+    border: 2px solid blue;
+}
+
 .left-sidebar[b-1kaokldm0g], .right-sidebar[b-1kaokldm0g] {
-    width: 350px;
+    width: 300px;
     background-color: cadetblue;
     padding: 1rem;
     box-sizing: border-box;
     position: relative;
+    user-select: none;
 }
-
 
 .file-input[b-1kaokldm0g] {
     margin-top: 1rem;
@@ -24,6 +64,7 @@ button[b-1kaokldm0g] {
     margin-top: 1rem;
     background-color: cadetblue;
 }
+
     button:hover[b-1kaokldm0g] {
         background-color: #2d5ba3;
         color: white;
@@ -37,14 +78,17 @@ button[b-1kaokldm0g] {
 }
 
 .canvas-container[b-1kaokldm0g] {
-    width: 100%;
-    height: 0;
-    padding-bottom: 75%;
     position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 800 / 480;
+    margin: 0 auto;
 }
 
 .canvas[b-1kaokldm0g] {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -74,9 +118,9 @@ button[b-1kaokldm0g] {
     transition: background-color 0.3s ease;
 }
 
-.tab-button.active[b-1kaokldm0g] {
-    background-color: #bbb;
-}
+    .tab-button.active[b-1kaokldm0g] {
+        background-color: #bbb;
+    }
 
 .tab-content[b-1kaokldm0g] {
     display: flex;
@@ -87,7 +131,7 @@ button[b-1kaokldm0g] {
     margin-bottom: 1rem;
 }
 
-.shape-circle[b-1kaokldm0g], .shape-triangle[b-1kaokldm0g], .shape-oval[b-1kaokldm0g], .shape-rectangle[b-1kaokldm0g], .shape-ellipse[b-1kaokldm0g], .shape-square[b-1kaokldm0g] {
+.shape-circle[b-1kaokldm0g], .shape-square[b-1kaokldm0g] {
     background-color: #ccc;
     border: 1px solid #999;
     margin-bottom: 0.5rem;
@@ -99,51 +143,26 @@ button[b-1kaokldm0g] {
     border-radius: 50%;
 }
 
-.shape-triangle[b-1kaokldm0g] {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #ccc;
-}
-
-.shape-oval[b-1kaokldm0g] {
-    width: 60px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.shape-rectangle[b-1kaokldm0g] {
-    width: 60px;
-    height: 40px;
-}
-
-.shape-ellipse[b-1kaokldm0g] {
-    width: 80px;
-    height: 40px;
-    border-radius: 50%;
-}
-
 .shape-square[b-1kaokldm0g] {
     width: 40px;
     height: 40px;
 }
 
-.slider-placeholder[b-1kaokldm0g] {
+.vertical-slider[b-1kaokldm0g], .horizontal-slider[b-1kaokldm0g] {
     background-color: #ddd;
     border: 1px solid #bbb;
     margin-bottom: 0.5rem;
 }
 
-.vertical-slider-placeholder[b-1kaokldm0g] {
+.vertical-slider[b-1kaokldm0g] {
     width: 8px;
     height: 100px;
     background: linear-gradient(to top, #bbb 50%, #ddd 50%);
 }
 
-.horizontal-slider-placeholder[b-1kaokldm0g] {
-    width: 100%;
-    height: 8px;
+.horizontal-slider[b-1kaokldm0g] {
+    width: 100px; /* Same width as the vertical slider height */
+    height: 8px; /* Same height as the vertical slider width */
     background: linear-gradient(to right, #bbb 50%, #ddd 50%);
 }
 
@@ -159,6 +178,33 @@ button[b-1kaokldm0g] {
 .form-checkbox[b-1kaokldm0g] {
     margin-left: 0.5rem;
 }
+
+.dragging[b-1kaokldm0g] {
+    opacity: 0.5;
+    cursor: grabbing;
+    z-index: 1000; /* Bring it on top during dragging */
+}
+
+.canvas-container .draggable[b-1kaokldm0g] {
+    position: absolute; /* Ensure draggable items are absolutely positioned */
+}
+
+.connection-status[b-1kaokldm0g] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    z-index: 1000; /* Ensure it's on top */
+    color: red; /* Default color */
+}
+
+    .connection-status.green[b-1kaokldm0g] {
+        color: green;
+    }
+
+    .connection-status.red[b-1kaokldm0g] {
+        color: red;
+    }
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-r12uzlpgm8] {
     appearance: none;

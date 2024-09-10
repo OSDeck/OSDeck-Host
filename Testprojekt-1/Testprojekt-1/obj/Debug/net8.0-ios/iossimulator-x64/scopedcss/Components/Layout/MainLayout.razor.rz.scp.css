@@ -2,22 +2,30 @@
     display: flex;
     height: 100vh;
     overflow: hidden; /* Ensure no scrolling */
+    background-color: lightgray;
 }
 
 .left-sidebar[b-1kaokldm0g], .right-sidebar[b-1kaokldm0g] {
-    width: 200px;
-    background-color: #f7f7f7;
+    width: 350px;
+    background-color: cadetblue;
     padding: 1rem;
     box-sizing: border-box;
     position: relative;
 }
 
-.left-sidebar[b-1kaokldm0g] {
-    background-color: #f7f7f7;
-}
-
 .file-input[b-1kaokldm0g] {
     margin-top: 1rem;
+}
+
+button[b-1kaokldm0g] {
+    border-radius: 6px;
+    margin-top: 1rem;
+    background-color: cadetblue;
+}
+
+button:hover[b-1kaokldm0g] {
+    background-color: #2d5ba3;
+    color: white;
 }
 
 .main[b-1kaokldm0g] {
@@ -28,16 +36,17 @@
 }
 
 .canvas-container[b-1kaokldm0g] {
-    width: 80%;
-    height: 80%;
-    background-color: #f0f0f0;
-    border: 1px solid #d6d5d5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    position: relative; /* Ensure the container is positioned correctly */
+    overflow: hidden; /* Ensures no overflow when items are dragged */
 }
 
 .canvas[b-1kaokldm0g] {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border: 1px solid #000;
@@ -58,8 +67,9 @@
     flex: 1;
     padding: 0.5rem;
     cursor: pointer;
-    background-color: #ddd;
-    border: none;
+    background-color: darkcyan;
+    border: 1px solid;
+    border-radius: 0px;
     outline: none;
     transition: background-color 0.3s ease;
 }
@@ -77,7 +87,7 @@
     margin-bottom: 1rem;
 }
 
-.shape-circle[b-1kaokldm0g], .shape-triangle[b-1kaokldm0g], .shape-oval[b-1kaokldm0g], .shape-rectangle[b-1kaokldm0g], .shape-ellipse[b-1kaokldm0g], .shape-square[b-1kaokldm0g] {
+.shape-circle[b-1kaokldm0g], .shape-square[b-1kaokldm0g] {
     background-color: #ccc;
     border: 1px solid #999;
     margin-bottom: 0.5rem;
@@ -85,31 +95,6 @@
 
 .shape-circle[b-1kaokldm0g] {
     width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.shape-triangle[b-1kaokldm0g] {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #ccc;
-}
-
-.shape-oval[b-1kaokldm0g] {
-    width: 60px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.shape-rectangle[b-1kaokldm0g] {
-    width: 60px;
-    height: 40px;
-}
-
-.shape-ellipse[b-1kaokldm0g] {
-    width: 80px;
     height: 40px;
     border-radius: 50%;
 }
@@ -149,4 +134,13 @@
 .form-checkbox[b-1kaokldm0g] {
     margin-left: 0.5rem;
 }
- 
+
+.dragging[b-1kaokldm0g] {
+    opacity: 0.5;
+    cursor: grabbing;
+    z-index: 1000; /* Bring it on top during dragging */
+}
+
+.canvas-container .draggable[b-1kaokldm0g] {
+    position: absolute; /* Ensure draggable items are absolutely positioned */
+}

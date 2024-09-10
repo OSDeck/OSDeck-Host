@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Testprojekt_1.Helpers;
 
 namespace Testprojekt_1
 {
@@ -16,9 +17,11 @@ namespace Testprojekt_1
 
             builder.Services.AddMauiBlazorWebView();
 
+            builder.Services.AddSingleton<ComHandler>();
+
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
-    		builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
